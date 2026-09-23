@@ -1,1568 +1,2242 @@
 {
-  "links": {
-    "EDS": {
-      "HLP": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
-      "LLCA Latin": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
-      "LLCA Grec": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
-      "LLCE": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
-      "HGGSP": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
-      "SES": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
-      "Math": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
-      "PC": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
-      "SVT": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
-      "SI": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
-      "NSI": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
-      "Danse": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
-      "Musique": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
-      "Plastique": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
-      "EPPCS": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
-      "Histoire Arts": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
-      "Theatre": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
-      "Cirque": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
-      "CAV": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
-      "Bio-Ecolo": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale"
+  "EDS": {
+    "Bio-Ecolo": {
+      "nom": "Biologie-Écologie",
+      "description": "Biologie-Écologie : Étude des êtres vivants et de leurs interactions avec leur environnement.",
+      "lien": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
+      "riasec": [
+        "I",
+        "R"
+      ]
     },
-    "techno": {
-      "ST2S": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-st2s-sciences-et-technologies-de-la-sante-et-du-social",
-      "STAV": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-stav-sciences-et-technologies-de-l-agronomie-et-du-vivant",
-      "STD2A": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-std2a-sciences-et-technologies-du-design-et-des-arts-appliques",
-      "STHR": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-sthr-sciences-et-technologies-de-l-hotellerie-et-de-la-restauration",
-      "STI2D": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-sti2d-sciences-et-technologies-de-l-industrie-et-du-developpement-durable",
-      "STI2D-AC": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-sti2d-sciences-et-technologies-de-l-industrie-et-du-developpement-durable-enseignement-specifique-architecture-et-construction",
-      "STI2D-EE": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-sti2d-sciences-et-technologies-de-l-industrie-et-du-developpement-durable-enseignement-specifique-energies-et-environnement",
-      "STI2D-ITEEC": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-sti2d-sciences-et-technologies-de-l-industrie-et-du-developpement-durable-enseignement-specifique-innovation-technologique-et-eco-conception",
-      "STI2D-SIN": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-sti2d-sciences-et-technologies-de-l-industrie-et-du-developpement-durable-enseignement-specifique-systemes-d-information-et-numerique",
-      "STL": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-stl-sciences-et-technologies-de-laboratoire",
-      "STL-BBB": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-stl-sciences-et-technologies-de-laboratoire-enseignement-specifique-biochimie-biologie-biotechnologie",
-      "STL-SPCL": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-stl-sciences-et-technologies-de-laboratoire-enseignement-specifique-sciences-physiques-et-chimiques-en-laboratoire",
-      "STMG": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-stmg-sciences-et-technologies-du-management-et-de-la-gestion",
-      "STMG-GF": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-stmg-sciences-et-technologies-du-management-et-de-la-gestion-enseignement-specifique-gestion-et-finance",
-      "STMG-Mercatique": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-stmg-sciences-et-technologies-du-management-et-de-la-gestion-enseignement-specifique-mercatique",
-      "STMG-RHC": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-stmg-sciences-et-technologies-du-management-et-de-la-gestion-enseignement-specifique-ressources-humaines-et-communication",
-      "STMG-SIG": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-stmg-sciences-et-technologies-du-management-et-de-la-gestion-enseignement-specifique-systemes-d-information-de-gestion",
-      "S2TMD": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-s2tmd-sciences-et-techniques-du-theatre-de-la-musique-et-de-la-danse",
-      "S2TMD-Danse": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-s2tmd-sciences-et-techniques-du-theatre-de-la-musique-et-de-la-danse-specialite-danse",
-      "S2TMD-Theatre": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-s2tmd-sciences-et-techniques-du-theatre-de-la-musique-et-de-la-danse-specialite-theatre",
-      "S2TMD-Musique": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-s2tmd-sciences-et-techniques-du-theatre-de-la-musique-et-de-la-danse-specialite-musique"
+    "CAV": {
+      "nom": "Arts : Cinéma-Audiovisuel",
+      "description": "Arts (Cinéma-Audiovisuel) : Étude des techniques et de l'histoire du cinéma et de l'audiovisuel.",
+      "lien": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
+      "riasec": [
+        "A",
+        "E"
+      ]
     },
-    "pro": {
-      "RNCP35634": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-systèmes-numériques"
+    "Cirque": {
+      "nom": "Arts : Cirque",
+      "description": "Arts (Cirque) : Pratique des arts du cirque et étude de leur histoire.",
+      "lien": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
+      "riasec": [
+        "A",
+        "R"
+      ]
     },
-    "CAP": {}
-  },
-  "descriptions": {
-    "EDS": {
-      "HLP": "Humanités, Littérature et Philosophie : Étude des œuvres littéraires et philosophiques pour développer l'esprit critique et la réflexion.",
-      "LLCA Latin": "Littérature, Langues et Cultures de l'Antiquité (Latin) : Étude de la langue, de la littérature et de la civilisation latines.",
-      "LLCA Grec": "Littérature, Langues et Cultures de l'Antiquité (Grec) : Étude de la langue, de la littérature et de la civilisation grecques.",
-      "LLCE": "Langues, Littératures et Cultures Étrangères et Régionales : Approfondissement d'une langue étrangère et de sa culture.",
-      "HGGSP": "Histoire-Géographie, Géopolitique et Sciences Politiques : Analyse des dynamiques politiques, économiques et sociales du monde contemporain.",
-      "SES": "Sciences Économiques et Sociales : Étude des mécanismes économiques et sociaux pour comprendre le monde contemporain.",
-      "Math": "Mathématiques : Approfondissement des concepts mathématiques et développement de la logique et de la résolution de problèmes.",
-      "PC": "Physique-Chimie : Étude des lois de la physique et de la chimie à travers des expériences et des modèles théoriques.",
-      "SVT": "Sciences de la Vie et de la Terre : Étude des êtres vivants, de la Terre et des phénomènes naturels.",
-      "SI": "Sciences de l'Ingénieur : Conception et analyse de systèmes techniques pour répondre à des problèmes concrets.",
-      "NSI": "Numérique et Sciences Informatiques : Apprentissage de la programmation, des algorithmes et des systèmes informatiques.",
-      "Danse": "Arts (Danse) : Pratique artistique et étude des œuvres chorégraphiques.",
-      "Musique": "Arts (Musique) : Pratique musicale et étude des œuvres et des styles musicaux.",
-      "Plastique": "Arts Plastiques : Pratique des arts visuels et étude de l'histoire de l'art.",
-      "EPPCS": "Éducation Physique, Pratiques et Cultures Sportives : Approfondissement des pratiques sportives et de leur dimension culturelle.",
-      "Histoire Arts": "Arts (Histoire des Arts) : Étude des œuvres d'art dans leur contexte historique et culturel.",
-      "Theatre": "Arts (Théâtre) : Pratique théâtrale et étude des œuvres dramatiques.",
-      "Cirque": "Arts (Cirque) : Pratique des arts du cirque et étude de leur histoire.",
-      "CAV": "Arts (Cinéma-Audiovisuel) : Étude des techniques et de l'histoire du cinéma et de l'audiovisuel.",
-      "Bio-Ecolo": "Biologie-Écologie : Étude des êtres vivants et de leurs interactions avec leur environnement."
+    "Danse": {
+      "nom": "Arts : Danse",
+      "description": "Arts (Danse) : Pratique artistique et étude des œuvres chorégraphiques.",
+      "lien": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
+      "riasec": [
+        "A",
+        "S"
+      ]
     },
-    "techno": {
-      "ST2S": "Formation axée sur les métiers du social et de la santé.",
-      "STAV": "Formation centrée sur l'agronomie, l'environnement et les sciences du vivant.",
-      "STD2A": "Formation artistique et technique pour les métiers du design.",
-      "STHR": "Formation pour les métiers de l'hôtellerie, de la restauration et du tourisme.",
-      "STI2D": "Formation axée sur les technologies industrielles et le développement durable.",
-      "STI2D-AC": "Conception et réalisation de bâtiments.",
-      "STI2D-EE": "Gestion des énergies et respect de l'environnement.",
-      "STI2D-ITEEC": "Conception de produits innovants et respectueux de l'environnement.",
-      "STI2D-SIN": "Développement de systèmes informatiques et numériques.",
-      "STL": "Formation axée sur les analyses en laboratoire.",
-      "STL-BBB": "Analyse biologique et chimique en laboratoire.",
-      "STL-SPCL": "Analyse physique et chimique en laboratoire.",
-      "STMG": "Formation axée sur le management et la gestion.",
-      "STMG-GF": "Gestion financière et comptable des organisations.",
-      "STMG-Mercatique": "Étude des marchés et stratégies commerciales.",
-      "STMG-RHC": "Gestion des ressources humaines et communication interne.",
-      "STMG-SIG": "Gestion des systèmes d'information et des bases de données.",
-      "S2TMD": "Formation artistique et technique dans les arts du spectacle.",
-      "S2TMD-Danse": "Formation artistique et technique en danse.",
-      "S2TMD-Theatre": "Formation artistique et technique en théâtre.",
-      "S2TMD-Musique": "Formation artistique et technique en musique."
+    "EPPCS": {
+      "nom": "Éducation Physique, Pratiques et Cultures Sportives",
+      "description": "Éducation Physique, Pratiques et Cultures Sportives : Approfondissement des pratiques sportives et de leur dimension culturelle.",
+      "lien": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
+      "riasec": [
+        "E",
+        "R"
+      ]
     },
-    "pro": {
-      "RNCP35634": "Formation professionnelle axée sur les systèmes numériques et l'informatique."
+    "HGGSP": {
+      "nom": "Histoire-Géographie, Géopolitique et Sciences Politiques",
+      "description": "Histoire-Géographie, Géopolitique et Sciences Politiques : Analyse des dynamiques politiques, économiques et sociales du monde contemporain.",
+      "lien": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
+      "riasec": [
+        "E",
+        "I"
+      ]
     },
-    "CAP": {}
-  },
-  "riasec": {
-    "EDS": {
-      "HLP": ["A", "S"],
-      "LLCA Latin": ["A", "I"],
-      "LLCA Grec": ["A", "I"],
-      "LLCE": ["S", "A"],
-      "HGGSP": ["E", "I"],
-      "SES": ["E", "S"],
-      "Math": ["I", "C"],
-      "PC": ["I", "R"],
-      "SVT": ["I", "R"],
-      "SI": ["R", "I"],
-      "NSI": ["I", "R"],
-      "Danse": ["A", "S"],
-      "Musique": ["A", "S"],
-      "Plastique": ["A", "R"],
-      "EPPCS": ["E", "R"],
-      "Histoire Arts": ["I", "A"],
-      "Theatre": ["A", "S"],
-      "Cirque": ["A", "R"],
-      "CAV": ["A", "E"],
-      "Bio-Ecolo": ["I", "R"]
+    "HLP": {
+      "nom": "Humanités, Littérature et Philosophie",
+      "description": "Humanités, Littérature et Philosophie : Étude des œuvres littéraires et philosophiques pour développer l'esprit critique et la réflexion.",
+      "lien": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
+      "riasec": [
+        "A",
+        "S"
+      ]
     },
-    "techno": {
-      "ST2S": ["S", "I"],
-      "STAV": ["R", "I"],
-      "STD2A": ["A", "R"],
-      "STHR": ["E", "S"],
-      "STI2D": ["R", "I"],
-      "STI2D-AC": ["R", "I"],
-      "STI2D-EE": ["R", "I"],
-      "STI2D-ITEEC": ["R", "I"],
-      "STI2D-SIN": ["R", "I"],
-      "STL": ["I", "R"],
-      "STL-BBB": ["I", "R"],
-      "STL-SPCL": ["I", "R"],
-      "STMG": ["C", "E"],
-      "STMG-GF": ["C", "E"],
-      "STMG-Mercatique": ["C", "E"],
-      "STMG-RHC": ["C", "E"],
-      "STMG-SIG": ["C", "E"],
-      "S2TMD": ["A", "R"],
-      "S2TMD-Danse": ["A", "R"],
-      "S2TMD-Theatre": ["A", "R"],
-      "S2TMD-Musique": ["A", "R"]
+    "Histoire Arts": {
+      "nom": "Arts : Histoire des Arts",
+      "description": "Arts (Histoire des Arts) : Étude des œuvres d'art dans leur contexte historique et culturel.",
+      "lien": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
+      "riasec": [
+        "I",
+        "A"
+      ]
     },
-    "pro": {
-      "35634": ["R", "I"]
+    "LLCA Grec": {
+      "nom": "Littérature, Langues et Cultures de l'Antiquité (Grec)",
+      "description": "Littérature, Langues et Cultures de l'Antiquité (Grec) : Étude de la langue, de la littérature et de la civilisation grecques.",
+      "lien": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
+      "riasec": [
+        "A",
+        "I"
+      ]
     },
-    "CAP": {}
-  },
-  "noms": {
-    "EDS": {
-      "HLP": "Humanités, Littérature et Philosophie",
-      "LLCA Latin": "Littérature, Langues et Cultures de l'Antiquité (Latin)",
-      "LLCA Grec": "Littérature, Langues et Cultures de l'Antiquité (Grec)",
-      "LLCE": "Langues, Littératures et Cultures Étrangères et Régionales",
-      "HGGSP": "Histoire-Géographie, Géopolitique et Sciences Politiques",
-      "SES": "Sciences Économiques et Sociales",
-      "Math": "Mathématiques",
-      "PC": "Physique-Chimie",
-      "SVT": "Sciences et vie de la Terre",
-      "SI": "Sciences de l'Ingénieur",
-      "NSI": "Numériques et Sciences Informatiques",
-      "Danse": "Arts : Danse",
-      "Musique": "Arts : Musique",
-      "Plastique": "Arts Plastiques",
-      "EPPCS": "Éducation Physique, Pratiques et Cultures Sportives",
-      "Histoire Arts": "Arts : Histoire des Arts",
-      "Theatre": "Arts : Théâtre",
-      "Cirque": "Arts : Cirque",
-      "CAV": "Arts : Cinéma-Audiovisuel",
-      "Bio-Ecolo": "Biologie-Écologie"
+    "LLCA Latin": {
+      "nom": "Littérature, Langues et Cultures de l'Antiquité (Latin)",
+      "description": "Littérature, Langues et Cultures de l'Antiquité (Latin) : Étude de la langue, de la littérature et de la civilisation latines.",
+      "lien": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
+      "riasec": [
+        "A",
+        "I"
+      ]
     },
-    "techno": {
-      "ST2S": "Sciences et Technologies de la Santé et du Social",
-      "STAV": "Sciences et Technologies de l'Agronomie et du Vivant",
-      "STD2A": "Sciences et Technologies du Design et des Arts Appliqués",
-      "STHR": "Sciences et Technologies de l'Hôtellerie et de la Restauration",
-      "STI2D": "Sciences et Technologies de l'Industrie et du Développement Durable",
-      "STI2D-AC": "STI2D - Architecture et Construction",
-      "STI2D-EE": "STI2D - Énergies et Environnement",
-      "STI2D-ITEEC": "STI2D - Innovation Technologique et Éco-Conception",
-      "STI2D-SIN": "STI2D - Système d'Information et Numérique",
-      "STL": "Sciences et Technologies de Laboratoire",
-      "STL-BBB": "STL - Biochimie-Biologie-Biotechnologie",
-      "STL-SPCL": "STL - Sciences Physiques et Chimiques en Laboratoire",
-      "STMG": "Sciences et Technologies du Management et de la Gestion",
-      "STMG-GF": "STMG - Gestion et Finance",
-      "STMG-Mercatique": "STMG - Mercatique (Marketing)",
-      "STMG-RHC": "STMG - Ressources Humaines et Communication",
-      "STMG-SIG": "STMG - Systèmes d'Information de Gestion",
-      "S2TMD": "Sciences et Techniques du Théâtre, de la Musique et de la Danse",
-      "S2TMD-Danse": "S2TMD - Spécialité Danse",
-      "S2TMD-Theatre": "S2TMD - Spécialité Théâtre",
-      "S2TMD-Musique": "S2TMD - Spécialité Musique"
+    "LLCE": {
+      "nom": "Langues, Littératures et Cultures Étrangères et Régionales",
+      "description": "Langues, Littératures et Cultures Étrangères et Régionales : Approfondissement d'une langue étrangère et de sa culture.",
+      "lien": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
+      "riasec": [
+        "S",
+        "A"
+      ]
     },
-    "pro": {
-"37231": {
-    "nom": "accompagnement soins et services a la personne option A - a domicile",
-    "description": "Forme à aider les personnes âgées ou malades chez elles.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-accompagnement-soins-et-services-a-la-personne-option-a---a-domicile",
-    "riasec": ["S", "R"]
-  },
-"37231": {
-    "nom": "accompagnement soins et services a la personne option B - en structure",
-    "description": "Prépare à travailler dans des maisons de retraite ou hôpitaux.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-accompagnement-soins-et-services-a-la-personne-option-b---en-structure",
-    "riasec": ["S", "C"]
-  },
-"38229": {
-    "nom": "amenagement et finitions du batiment",
-    "description": "Forme à décorer et rénover les bâtiments (peinture, carrelage…).",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-amenagement-et-finitions-du-batiment",
-    "riasec": ["R", "A"]
-  },
-"41187": {
-    "nom": "animation - enfance et personnes agees",
-    "description": "Prépare à organiser des activités pour enfants ou seniors.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-animation---enfance-et-personnes-agees",
-    "riasec": ["S", "A"]
-  },
-"37232": {
-    "nom": "artisanat et metiers d'art option : communication visuelle pluri-media",
-    "description": "Forme à créer des affiches, logos, sites web ou vidéos.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-communication-visuelle-pluri-media",
-    "riasec": ["A", "C"]
-  },
-"36425": {
-    "nom": "artisanat et metiers d'art option : metiers de l'enseigne et de la signaletique",
-    "description": "Apprend à fabriquer des panneaux, enseignes et décorations visuelles.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-metiers-de-l-enseigne-et-de-la-signaletique",
-    "riasec": ["A", "C"]
-  },
-"39646": {
-    "nom": "artisanat et metiers d'art option : tapissier d'ameublement",
-    "description": "Forme à refaire ou créer des sièges, rideaux, coussins.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-tapissier-d-ameublement",
-    "riasec": ["A", "R"]
-  },
-"5291": {
-    "nom": "artisanat et metiers d'art option : verrerie scientifique et technique",
-    "description": "Apprend à fabriquer des objets en verre pour la science ou l’industrie.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-verrerie-scientifique-et-technique",
-    "riasec": ["R", "A"]
-  },
-"36335": {
-    "nom": "artisanat et metiers d'art option marchandisage visuel",
-    "description": "Prépare à mettre en valeur les produits dans les magasins.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-marchandisage-visuel",
-    "riasec": ["A", "E"]
-  },
-"40705": {
-    "nom": "assistance a la gestion des organisations et de leurs activites",
-    "description": "Apprend à gérer les papiers, les plannings et l’organisation dans une entreprise.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-assistance-a-la-gestion-des-organisations-et-de-leurs-activites",
-    "riasec": ["C", "E"]
-  },
-"37699": {
-    "nom": "bio-industries de transformation",
-    "description": "Apprend à fabriquer des produits alimentaires ou cosmétiques en usine.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-bio-industries-de-transformation",
-    "riasec": ["R", "I"]
-  },
-"37908": {
-    "nom": "boulanger-pâtissier",
-    "description": "Forme à fabriquer pains, gâteaux et desserts en boulangerie-pâtisserie.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-boulanger-patissier",
-    "riasec": ["R", "C"]
-  },
-"38399": {
-    "nom": "commerce",
-    "description": "Apprend à vendre, gérer un rayon et conseiller les clients.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-commerce",
-    "riasec": ["E", "C"]
-  },
-"37909": {
-    "nom": "commercialisation et services en restauration",
-    "description": "Prépare à gérer le service en salle et la relation client dans la restauration.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-commercialisation-et-services-en-restauration",
-    "riasec": ["S", "E"]
-  },
-"37910": {
-    "nom": "cuisine",
-    "description": "Forme à gérer une cuisine, créer des menus et encadrer une équipe.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-cuisine",
-    "riasec": ["R", "A"]
-  },
-"37489": {
-    "nom": "Cybersécurité, Informatique et Réseaux, Électronique",
-    "description": "Forme à installer et réparer des équipements électroniques.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-systemes-electroniques-numeriques",
-    "riasec": ["R", "I"]
-  },
-"37489": {
-    "nom": "Cybersécurité, Informatique et Réseaux, Électronique",
-    "description": "Apprend à gérer des systèmes de sécurité électroniques.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-systemes-numeriques-option-a-:-surete-et-securite",
-    "riasec": ["R", "I"]
-  },
-"26334": {
-    "nom": "Cybersécurité, Informatique et Réseaux, Électronique",
-    "description": "Forme à installer des équipements audio et vidéo dans les maisons ou entreprises.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-systemes-numeriques-option-b-:-audiovisuels,-reseau",
-    "riasec": ["R", "I"]
-  },
-"26335": {
-    "nom": "Cybersécurité, Informatique et Réseaux, Électronique",
-    "description": "Apprend à installer et gérer des réseaux informatiques.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-systemes-numeriques-option-c-:-reseaux-informatiques",
-    "riasec": ["I", "R"]
-  },
-"37375": {
-    "nom": "esthetique cosmetique parfumerie",
-    "description": "Forme à gérer un institut de beauté et à maîtriser des techniques avancées.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-esthetique-cosmetique-parfumerie",
-    "riasec": ["A", "S"]
-  },
-"36191": {
-    "nom": "etude et definition de produits industriels",
-    "description": "Apprend à concevoir des pièces techniques pour l’industrie.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-etude-et-definition-de-produits-industriels",
-    "riasec": ["I", "R"]
-  },
-"41837": {
-    "nom": "etude et realisation d'agencement",
-    "description": "Forme à créer et installer des aménagements intérieurs.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-etude-et-realisation-d-agencement",
-    "riasec": ["A", "R"]
-  },
-"38422": {
-    "nom": "faconnage de produits imprimes, routage",
-    "description": "Apprend à préparer et envoyer des documents imprimés.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-faconnage-de-produits-imprimes,-routage",
-    "riasec": ["C", "R"]
-  },
-"40705": {
-    "nom": "AGORA",
-    "description": "Forme à gérer les tâches administratives d’une entreprise.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-assistance-a-la-gestion-des-organisations-et-de-leurs-activites-(agora).",
-    "riasec": ["C", "S"]
-  },
-"20692": {
-    "nom": "hygiene, proprete, sterilisation",
-    "description": "Forme à nettoyer et désinfecter des lieux sensibles comme les hôpitaux.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-hygiene,-proprete,-sterilisation",
-    "riasec": ["R", "C"]
-  },
-"41014": {
-    "nom": "interventions sur le patrimoine bati, option a maconnerie",
-    "description": "Apprend à restaurer des bâtiments anciens en respectant les techniques traditionnelles.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-interventions-sur-le-patrimoine-bati-option-a-:-maconnerie",
-    "riasec": ["R", "C"]
-  },
-"38318": {
-    "nom": "laboratoire controle qualite",
-    "description": "Forme à vérifier la qualité des produits fabriqués.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-laboratoire-controle-qualite",
-    "riasec": ["I", "C"]
-  },
-"40687": {
-    "nom": "logistique",
-    "description": "Apprend à organiser le stockage et les livraisons de marchandises.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-logistique",
-    "riasec": ["C", "R"]
-  },
-"3632": {
-    "nom": "maintenance des equipements industriels",
-    "description": "Apprend à réparer et entretenir les machines d’usine.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-maintenance-des-equipements-industriels",
-    "riasec": ["R", "I"]
-  },
-"510": {
-    "nom": "maintenance des vehicules option a voitures particulieres",
-    "description": "Forme à réparer et entretenir les voitures.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-maintenance-des-vehicules-option-a-:-voitures-particulieres",
-    "riasec": ["R", "I"]
-  },
-"700": {
-    "nom": "maintenance des vehicules option c motocycles",
-    "description": "Forme à réparer les motos et scooters.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-maintenance-des-vehicules-option-c-:-motocycles",
-    "riasec": ["R", "I"]
-  },
-"39806": {
-    "nom": "menuiserie aluminium-verre",
-    "description": "Forme à fabriquer et poser des éléments en alu et verre.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-menuiserie-aluminium-verre",
-    "riasec": ["R", "C"]
-  },
-"38397": {
-    "nom": "Métiers de l’accueil",
-    "description": "Apprend à accueillir et informer les clients ou visiteurs.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-accueil---relation-clients-et-usagers",
-    "riasec": ["E", "S"]
-  },
-"38878": {
-    "nom": "Métiers de l’électricité et de ses environnements connectés",
-    "description": "Forme à gérer des installations électriques complexes et connectées.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-electrotechnique-energie-equipements-communicants",
-    "riasec": ["R", "I"]
-  },
-"40707": {
-    "nom": "metiers de la coiffure",
-    "description": "Forme à gérer un salon de coiffure et à maîtriser des techniques avancées.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-metiers-de-la-coiffure",
-    "riasec": ["S", "A"]
-  },
-"38729": {
-    "nom": "metiers de la mode - vêtement",
-    "description": "Apprend à créer et fabriquer des vêtements.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-metiers-de-la-mode---vetement",
-    "riasec": ["A", "R"]
-  },
-"39133": {
-    "nom": "metiers de la securite",
-    "description": "Prépare à assurer la sécurité des lieux et des personnes.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-metiers-de-la-securite",
-    "riasec": ["R", "E"]
-  },
-"38397": {
-    "nom": "metiers de l'accueil",
-    "description": "Apprend à accueillir et orienter les visiteurs ou clients.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-metiers-de-l-accueil",
-    "riasec": ["S", "E"]
-  },
-"38878": {
-    "nom": "metiers de l'electricite et de ses environnements connectes",
-    "description": "Forme à installer et entretenir des systèmes électriques modernes.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-metiers-de-l-electricite-et-de-ses-environnements-connectes",
-    "riasec": ["R", "I"]
-  },
-"32208": {
-    "nom": "metiers du commerce et de la vente option a animation et gestion de l'espace commercial",
-    "description": "Apprend à organiser un magasin et à gérer les ventes.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-commerce-et-vente-option-a-:-animation-et-gestion-de-l-espace-commercial",
-    "riasec": ["E", "S"]
-  },
-"38399": {
-    "nom": "metiers du commerce et de la vente option b prospection clientele et valorisation de l'offre commerciale",
-    "description": "Forme à chercher des clients et à présenter des produits.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-commerce-et-vente-option-b-:-prospection-clientele-et-valorisation-de-l-offre",
-    "riasec": ["E", "C"]
-  },
-"37230": {
-    "nom": "metiers du cuir option chaussures",
-    "description": "Apprend à fabriquer des chaussures en cuir.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-metiers-du-cuir-option-chaussures",
-    "riasec": ["R", "A"]
-  },
-"24740": {
-    "nom": "metiers du cuir option maroquinerie",
-    "description": "Forme à créer des sacs, ceintures et objets en cuir.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-metiers-du-cuir-option-maroquinerie",
-    "riasec": ["R", "A"]
-  },
-"38423": {
-    "nom": "microtechniques",
-    "description": "Apprend à fabriquer et réparer de petits objets techniques (montres, appareils médicaux…).",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-microtechniques",
-    "riasec": ["I", "R"]
-  },
-"38456": {
-    "nom": "optique lunetterie",
-    "description": "Forme à fabriquer et vendre des lunettes et à conseiller les clients.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-optique-lunetterie",
-    "riasec": ["R", "I"]
-  },
-"40993": {
-    "nom": "organisation de transport de marchandises",
-    "description": "Apprend à planifier les livraisons et les trajets des camions ou colis.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-organisation-de-transport-de-marchandises",
-    "riasec": ["C", "R"]
-  },
-"39514": {
-    "nom": "ouvrages du batiment : metallerie",
-    "description": "Apprend à fabriquer et poser des éléments métalliques dans les bâtiments.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-ouvrages-du-batiment-:-metallerie",
-    "riasec": ["R", "I"]
-  },
-"38308": {
-    "nom": "perruquier posticheur",
-    "description": "Apprend à fabriquer des perruques et postiches pour le spectacle ou la santé.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-perruquier-posticheur",
-    "riasec": ["A", "R"]
-  },
-"37233": {
-    "nom": "photographie",
-    "description": "Forme à prendre, retoucher et imprimer des photos pour différents usages.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-photographie",
-    "riasec": ["A", "I"]
-  },
-"36428": {
-    "nom": "pilote de ligne de production",
-    "description": "Apprend à gérer des machines dans une usine pour fabriquer des produits.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-pilote-de-ligne-de-production",
-    "riasec": ["R", "C"]
-  },
-"38499": {
-    "nom": "procedes de la chimie, de l'eau et des papiers-cartons",
-    "description": "Apprend à travailler dans des usines de produits chimiques ou de traitement de l’eau.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-procedes-de-la-chimie,-de-l-eau-et-des-papiers-cartons",
-    "riasec": ["I", "R"]
-  },
-"41063": {
-    "nom": "prothese dentaire",
-    "description": "Apprend à fabriquer des dents artificielles et appareils dentaires.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-prothese-dentaire",
-    "riasec": ["R", "C"]
-  },
-"38567": {
-    "nom": "realisation de produits imprimes et plurimedia option a productions graphiques",
-    "description": "Forme à créer des visuels pour l’impression ou le web.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-realisation-de-produits-imprimes-et-plurimedia-option-a-:-productions-graphiques",
-    "riasec": ["A", "C"]
-  },
-"38567": {
-    "nom": "realisation de produits imprimes et plurimedia option b productions imprimees",
-    "description": "Apprend à imprimer et façonner des documents.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-realisation-de-produits-imprimes-et-plurimedia-option-b-:-productions-imprimees",
-    "riasec": ["C", "R"]
-  },
-"4556": {
-    "nom": "services de proximite et vie locale",
-    "description": "Apprend à aider les personnes dans leur quotidien et à organiser des activités locales.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-services-de-proximite-et-vie-locale",
-    "riasec": ["S", "C"]
-  },
-"37308": {
-    "nom": "technicien de fabrication bois et materiaux associes",
-    "description": "Apprend à fabriquer des éléments en bois ou matériaux composites.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-de-fabrication-bois-et-materiaux-associes",
-    "riasec": ["R", "C"]
-  },
-"42761": {
-    "nom": "Maintenance et efficacité énergétique",
-    "description": "Forme à entretenir les systèmes de chauffage, climatisation et ventilation.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-maintenance-et-efficacite-energetique",
-    "riasec": ["R", "I"]
-  },
-"4424": {
-    "nom": "technicien d'etudes du batiment option a : etudes et economie",
-    "description": "Apprend à calculer les coûts et organiser les travaux d’un chantier.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-d-etudes-du-batiment-option-a-:-etudes-et-economie",
-    "riasec": ["I", "C"]
-  },
-"5640": {
-    "nom": "technicien d'etudes du batiment option b : assistant en architecture",
-    "description": "Forme à dessiner les plans et aider les architectes.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-d-etudes-du-batiment-option-b-:-assistant-en-architecture",
-    "riasec": ["A", "C"]
-  },
-"41940": {
-    "nom": "technicien du batiment : organisation et realisation du gros oeuvre",
-    "description": "Apprend à organiser et réaliser la structure des bâtiments.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-du-batiment-:-organisation-et-realisation-du-gros-oeuvre",
-    "riasec": ["R", "C"]
-  },
-"42762": {
-    "nom": "Métiers du froid et des énergies renouvelables",
-    "description": "Forme à installer et entretenir les systèmes de réfrigération et climatisation.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-metiers-du-froid-et-des-energies-renouvelables",
-    "riasec": ["R", "I"]
-  },
-"41015": {
-    "nom": "Technicien en réalisation de produits mécaniques, option réalisation et suivi de productions, option réalisation et maintenance des outillages",
-    "description": "Apprend à fabriquer des pièces mécaniques avec des machines.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-en-realisation-de-produits-mecaniques,-option-realisation-et-suivi-de-productions,-option-realisation-et-maintenance-des-outillages",
-    "riasec": ["R", "C"]
-  },
-"37947": {
-    "nom": "technicien en appareillage orthopedique",
-    "description": "Forme à fabriquer des équipements médicaux sur mesure.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-en-appareillage-orthopedique",
-    "riasec": ["R", "S"]
-  },
-"38337": {
-    "nom": "technicien en chaudronnerie industrielle",
-    "description": "Apprend à fabriquer des structures métalliques pour l’industrie.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-en-chaudronnerie-industrielle",
-    "riasec": ["R", "I"]
-  },
-"42117": {
-    "nom": "Installateur en chauffage, climatisation et énergies renouvelables",
-    "description": "Apprend à installer et entretenir les systèmes de chauffage, ventilation et climatisation.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-installateur-en-chauffage,-climatisation-et-energies-renouvelables",
-    "riasec": ["R", "I"]
-  },
-"41063": {
-    "nom": "technicien en prothese dentaire",
-    "description": "Forme à fabriquer des dents artificielles et appareils dentaires.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-en-prothese-dentaire",
-    "riasec": ["R", "C"]
-  },
-"39269": {
-    "nom": "technicien geometre-topographe",
-    "description": "Apprend à mesurer les terrains et à réaliser des plans pour les constructions.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-geometre-topographe",
-    "riasec": ["I", "R"]
-  },
-"41867": {
-    "nom": "technicien menuisier agenceur",
-    "description": "Forme à fabriquer et installer des meubles et aménagements intérieurs.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-menuisier-agenceur",
-    "riasec": ["R", "A"]
-  },
-"422": {
-    "nom": "technicien outilleur",
-    "description": "Apprend à fabriquer des outils pour les machines industrielles.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-outilleur",
-    "riasec": ["R", "I"]
-  },
-"22694": {
-    "nom": "transport",
-    "description": "Forme à organiser les livraisons et les déplacements de marchandises.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-transport",
-    "riasec": ["C", "R"]
-  },
-"38399": {
-    "nom": "Métiers du commerce et de la vente",
-    "description": "Forme à chercher des clients, négocier et vendre des produits ou services.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-vente-(prospection---negociation---suivi-de-clientele)",
-    "riasec": ["E", "S"]
-  },
-"38881": {
-    "nom": "conduite de productions horticoles",
-    "description": "Forme à la gestion des cultures horticoles (légumes, fleurs, plantes) et à l'utilisation d'outils agricoles.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-conduite-de-productions-horticoles",
-    "riasec": ["R", "I"]
-  },
-"40012": {
-    "nom": "Construction et aménagement de véhicules",
-    "description": "Prépare à la fabrication, l'assemblage et l'aménagement d'éléments pour véhicules (carrosserie, habillage).",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-construction-et-amenagement-de-vehicules",
-    "riasec": ["R", "C"]
-  },
-"37698": {
-    "nom": "maintenance nautique",
-    "description": "Forme à l'entretien et la réparation des bateaux (moteurs, coques, systèmes électriques).",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-maintenance-nautique",
-    "riasec": ["R", "I"]
-  },
-"37913": {
-    "nom": "Carrossier peintre automobile",
-    "description": "Forme à la réparation, la préparation et la peinture des carrosseries de véhicules.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-carrossier-peintre-automobile",
-    "riasec": ["R", "C"]
-  },
-"41938": {
-    "nom": "technicien conseil vente en alimentation (produits alimentaires et boissons)",
-    "description": "Forme à conseiller et vendre des produits alimentaires et boissons, avec une approche commerciale.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-conseil-vente-en-alimentation-(produits-alimentaires-et-boissons)",
-    "riasec": ["E", "S"]
-  },
-"41062": {
-    "nom": "technicien conseil vente univers jardinerie",
-    "description": "Prépare à conseiller et vendre des produits de jardinerie, avec des connaissances en botanique.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-conseil-vente-univers-jardinerie",
-    "riasec": ["E", "R"]
-  },
-"37385": {
-    "nom": "travaux publics",
-    "description": "Forme à la réalisation de chantiers de construction et d'aménagement (routes, réseaux, bâtiments publics).",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-travaux-publics",
-    "riasec": ["R", "C"]
-  },
-"42117": {
-    "nom": "Installateur en chauffage, climatisation et énergies renouvelables",
-    "description": "Apprend à installer et entretenir les systèmes de chauffage, ventilation et climatisation.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-installateur-en-chauffage,-climatisation-et-energies-renouvelables",
-    "riasec": ["R", "I"]
-  },
-"4434": {
-    "nom": "Technicien de maintenance des systèmes énergétiques et climatiques",
-    "description": "Forme à entretenir les systèmes de chauffage, climatisation et ventilation.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-de-maintenance-des-systemes-energetiques-et-climatiques",
-    "riasec": ["R", "I"]
-  },
-"4433": {
-    "nom": "Technicien en installation des systèmes énergétiques et climatiques",
-    "description": "Apprend à installer et entretenir les systèmes de chauffage, ventilation et climatisation.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-en-installation-des-systemes-energetiques-et-climatiques",
-    "riasec": ["R", "I"]
-  },
-"42118": {
-    "nom": "Bac pro maintenance des systèmes de production connectés",
-    "description": "Forme à entretenir, diagnostiquer et réparer des équipements industriels automatisés et connectés.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-maintenance-des-systemes-de-production-connectes",
-    "riasec": ["R", "I"]
-  },
-"40311": {
-    "nom": "Bac pro maintenance environnementale et propreté des espaces urbains",
-    "description": "Prépare aux métiers de la propreté urbaine, de l’entretien des espaces publics et de la gestion des équipements collectifs.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-maintenance-environnementale-et-proprete-des-espaces-urbains",
-    "riasec": ["R", "S"]
-  },
-"39033": {
-    "nom": "Bac pro technicien d'études du bâtiment option B assistant en architecture",
-    "description": "Apprend à réaliser des plans, maquettes et dossiers techniques pour des projets architecturaux.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-d'etudes-du-batiment-option-b-assistant-en-architecture",
-    "riasec": ["A", "R"]
-  },
-"40706": {
-    "nom": "Bac pro conducteur routier de marchandises",
-    "description": "Prépare à conduire des poids lourds et assurer le transport sécurisé de marchandises.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-conducteur-routier-de-marchandises",
-    "riasec": ["R", "E"]
-  },
-"39327": {
-    "nom": "Bac pro maintenance des matériels option B : matériels de construction et de manutention",
-    "description": "Forme à diagnostiquer, réparer et optimiser les performances des engins de chantier et de manutention.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-maintenance-des-materiels-option-b-:-materiels-de-construction-et-de-manutention",
-    "riasec": ["R", "I"]
-  },
-"16770": {
-    "nom": "BAC PRO Conducteur transport routier marchandises",
-    "description": "Prépare à la conduite professionnelle de véhicules lourds et à la gestion logistique des trajets.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-conducteur-transport-routier-marchandises",
-    "riasec": ["R", "E"]
-  },
-"37928": {
-    "nom": "Bac pro aéronautique option avionique",
-    "description": "Forme à installer, contrôler et réparer les systèmes électroniques embarqués des avions.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-aeronautique-option-avionique",
-    "riasec": ["I", "R"]
-  },
-"41866": {
-    "nom": "Bac pro technicien constructeur bois",
-    "description": "Forme à concevoir, fabriquer et poser des structures et ouvrages en bois.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-constructeur-bois",
-    "riasec": ["R", "A"]
-  },
-"37914": {
-    "nom": "Bac pro aviation générale",
-    "description": "Prépare aux opérations de maintenance, de préparation et de suivi des aéronefs.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-aviation-generale",
-    "riasec": ["I", "R"]
-  },
-"38313": {
-    "nom": "Bac pro technicien modeleur",
-    "description": "Forme à concevoir et réaliser des modèles et prototypes pour l’industrie.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-modeleur",
-    "riasec": ["A", "R"]
-  },
-"39516": {
-    "nom": "Bac pro traitements des matériaux",
-    "description": "Apprend à appliquer des traitements de surface pour protéger ou améliorer les matériaux.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-traitements-des-materiaux",
-    "riasec": ["R", "I"]
-  },
-"25353": {
-    "nom": "Cybersécurité, Informatique et Réseaux, Électronique",
-    "description": "Forme à installer et maintenir des réseaux informatiques et des systèmes électroniques.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-systemes-numeriques",
-    "riasec": ["R", "I"]
-  },
-"25354": {
-    "nom": "Cybersécurité, Informatique et Réseaux, Électronique",
-    "description": "Forme à gérer la sécurité des systèmes informatiques et des réseaux.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-systemes-numeriques",
-    "riasec": ["R", "I"]
-  },
-"37930": {
-    "nom": "Bac pro pâtisserie",
-    "description": "Apprend à fabriquer des gâteaux, desserts et viennoiseries en boulangerie-pâtisserie.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-patisserie",
-    "riasec": ["R", "A"]
-  },
-"763": {
-    "nom": "Bac pro ouvrages du bâtiment : métallerie",
-    "description": "Forme à fabriquer et poser des éléments métalliques pour le bâtiment.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-ouvrages-du-batiment-metallerie",
-    "riasec": ["R", "I"]
-  },
-"40009": {
-    "nom": "Bac pro maintenance des véhicules",
-    "description": "Forme à entretenir et réparer différents types de véhicules.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-maintenance-des-vehicules",
-    "riasec": ["R", "I"]
-  },
-"35844": {
-    "nom": "Bac pro technicien du bâtiment : organisation et réalisation du gros œuvre",
-    "description": "Prépare à coordonner et réaliser les travaux de gros œuvre sur un chantier.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-du-batiment-organisation-et-realisation-du-gros-oeuvre",
-    "riasec": ["R", "C"]
-  },
-"4895": {
-    "nom": "Bac pro aménagement et finitions du bâtiment",
-    "description": "Forme à réaliser les travaux de finition et d'aménagement intérieur.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-amenagement-et-finitions-du-batiment",
-    "riasec": ["R", "C"]
-  },
-"35846": {
-    "nom": "Bac pro technicien en installation des systèmes énergétiques et climatiques",
-    "description": "Forme à installer et maintenir des systèmes de chauffage et de climatisation.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-en-installation-des-systemes-energetiques-et-climatiques",
-    "riasec": ["R", "I"]
-  },
-"420": {
-    "nom": "Bac pro construction bâtiment gros œuvre",
-    "description": "Prépare à construire des fondations, murs et structures en béton ou maçonnerie.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-construction-batiment-gros-oeuvre",
-    "riasec": ["R", "C"]
-  },
-"42128": {
-    "nom": "Bac pro métiers de l'entretien des textiles",
-    "description": "Forme à nettoyer et entretenir les textiles dans un commerce spécialisé.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-metiers-de-l-entretien-des-textiles",
-    "riasec": ["C", "R"]
-  },
-"7586": {
-    "nom": "Bac pro bio-industries de transformation",
-    "description": "Apprend à fabriquer et transformer des produits issus de la biologie et de l'agroalimentaire.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-bio-industries-de-transformation",
-    "riasec": ["R", "I"]
-  },
-"38386": {
-    "nom": "Bac pro jardinerie pépinière",
-    "description": "Forme à cultiver et vendre des plantes, arbres et arbustes en pépinière.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-jardinerie-pepiniere",
-    "riasec": ["R", "A"]
-  }
+    "Math": {
+      "nom": "Mathématiques",
+      "description": "Mathématiques : Approfondissement des concepts mathématiques et développement de la logique et de la résolution de problèmes.",
+      "lien": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
+      "riasec": [
+        "I",
+        "C"
+      ]
+    },
+    "Musique": {
+      "nom": "Arts : Musique",
+      "description": "Arts (Musique) : Pratique musicale et étude des œuvres et des styles musicaux.",
+      "lien": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
+      "riasec": [
+        "A",
+        "S"
+      ]
+    },
+    "NSI": {
+      "nom": "Numériques et Sciences Informatiques",
+      "description": "Numérique et Sciences Informatiques : Apprentissage de la programmation, des algorithmes et des systèmes informatiques.",
+      "lien": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
+      "riasec": [
+        "I",
+        "R"
+      ]
+    },
+    "PC": {
+      "nom": "Physique-Chimie",
+      "description": "Physique-Chimie : Étude des lois de la physique et de la chimie à travers des expériences et des modèles théoriques.",
+      "lien": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
+      "riasec": [
+        "I",
+        "R"
+      ]
+    },
+    "Plastique": {
+      "nom": "Arts Plastiques",
+      "description": "Arts Plastiques : Pratique des arts visuels et étude de l'histoire de l'art.",
+      "lien": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "SES": {
+      "nom": "Sciences Économiques et Sociales",
+      "description": "Sciences Économiques et Sociales : Étude des mécanismes économiques et sociaux pour comprendre le monde contemporain.",
+      "lien": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
+      "riasec": [
+        "E",
+        "S"
+      ]
+    },
+    "SI": {
+      "nom": "Sciences de l'Ingénieur",
+      "description": "Sciences de l'Ingénieur : Conception et analyse de systèmes techniques pour répondre à des problèmes concrets.",
+      "lien": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "SVT": {
+      "nom": "Sciences et vie de la Terre",
+      "description": "Sciences de la Vie et de la Terre : Étude des êtres vivants, de la Terre et des phénomènes naturels.",
+      "lien": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
+      "riasec": [
+        "I",
+        "R"
+      ]
+    },
+    "Theatre": {
+      "nom": "Arts : Théâtre",
+      "description": "Arts (Théâtre) : Pratique théâtrale et étude des œuvres dramatiques.",
+      "lien": "https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/les-enseignements-de-specialite-en-voie-generale",
+      "riasec": [
+        "A",
+        "S"
+      ]
+    }
+  },
+  "techno": {
+    "S2TMD": {
+      "nom": "Sciences et Techniques du Théâtre, de la Musique et de la Danse",
+      "description": "Formation artistique et technique dans les arts du spectacle.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-s2tmd-sciences-et-techniques-du-theatre-de-la-musique-et-de-la-danse",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "S2TMD-Danse": {
+      "nom": "S2TMD - Spécialité Danse",
+      "description": "Formation artistique et technique en danse.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-s2tmd-sciences-et-techniques-du-theatre-de-la-musique-et-de-la-danse-specialite-danse",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "S2TMD-Musique": {
+      "nom": "S2TMD - Spécialité Musique",
+      "description": "Formation artistique et technique en musique.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-s2tmd-sciences-et-techniques-du-theatre-de-la-musique-et-de-la-danse-specialite-musique",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "S2TMD-Theatre": {
+      "nom": "S2TMD - Spécialité Théâtre",
+      "description": "Formation artistique et technique en théâtre.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-s2tmd-sciences-et-techniques-du-theatre-de-la-musique-et-de-la-danse-specialite-theatre",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "ST2S": {
+      "nom": "Sciences et Technologies de la Santé et du Social",
+      "description": "Formation axée sur les métiers du social et de la santé.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-st2s-sciences-et-technologies-de-la-sante-et-du-social",
+      "riasec": [
+        "S",
+        "I"
+      ]
+    },
+    "STAV": {
+      "nom": "Sciences et Technologies de l'Agronomie et du Vivant",
+      "description": "Formation centrée sur l'agronomie, l'environnement et les sciences du vivant.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-stav-sciences-et-technologies-de-l-agronomie-et-du-vivant",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "STD2A": {
+      "nom": "Sciences et Technologies du Design et des Arts Appliqués",
+      "description": "Formation artistique et technique pour les métiers du design.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-std2a-sciences-et-technologies-du-design-et-des-arts-appliques",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "STHR": {
+      "nom": "Sciences et Technologies de l'Hôtellerie et de la Restauration",
+      "description": "Formation pour les métiers de l'hôtellerie, de la restauration et du tourisme.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-sthr-sciences-et-technologies-de-l-hotellerie-et-de-la-restauration",
+      "riasec": [
+        "E",
+        "S"
+      ]
+    },
+    "STI2D": {
+      "nom": "Sciences et Technologies de l'Industrie et du Développement Durable",
+      "description": "Formation axée sur les technologies industrielles et le développement durable.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-sti2d-sciences-et-technologies-de-l-industrie-et-du-developpement-durable",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "STI2D-AC": {
+      "nom": "STI2D - Architecture et Construction",
+      "description": "Conception et réalisation de bâtiments.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-sti2d-sciences-et-technologies-de-l-industrie-et-du-developpement-durable-enseignement-specifique-architecture-et-construction",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "STI2D-EE": {
+      "nom": "STI2D - Énergies et Environnement",
+      "description": "Gestion des énergies et respect de l'environnement.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-sti2d-sciences-et-technologies-de-l-industrie-et-du-developpement-durable-enseignement-specifique-energies-et-environnement",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "STI2D-ITEEC": {
+      "nom": "STI2D - Innovation Technologique et Éco-Conception",
+      "description": "Conception de produits innovants et respectueux de l'environnement.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-sti2d-sciences-et-technologies-de-l-industrie-et-du-developpement-durable-enseignement-specifique-innovation-technologique-et-eco-conception",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "STI2D-SIN": {
+      "nom": "STI2D - Système d'Information et Numérique",
+      "description": "Développement de systèmes informatiques et numériques.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-sti2d-sciences-et-technologies-de-l-industrie-et-du-developpement-durable-enseignement-specifique-systemes-d-information-et-numerique",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "STL": {
+      "nom": "Sciences et Technologies de Laboratoire",
+      "description": "Formation axée sur les analyses en laboratoire.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-stl-sciences-et-technologies-de-laboratoire",
+      "riasec": [
+        "I",
+        "R"
+      ]
+    },
+    "STL-BBB": {
+      "nom": "STL - Biochimie-Biologie-Biotechnologie",
+      "description": "Analyse biologique et chimique en laboratoire.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-stl-sciences-et-technologies-de-laboratoire-enseignement-specifique-biochimie-biologie-biotechnologie",
+      "riasec": [
+        "I",
+        "R"
+      ]
+    },
+    "STL-SPCL": {
+      "nom": "STL - Sciences Physiques et Chimiques en Laboratoire",
+      "description": "Analyse physique et chimique en laboratoire.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-stl-sciences-et-technologies-de-laboratoire-enseignement-specifique-sciences-physiques-et-chimiques-en-laboratoire",
+      "riasec": [
+        "I",
+        "R"
+      ]
+    },
+    "STMG": {
+      "nom": "Sciences et Technologies du Management et de la Gestion",
+      "description": "Formation axée sur le management et la gestion.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-stmg-sciences-et-technologies-du-management-et-de-la-gestion",
+      "riasec": [
+        "C",
+        "E"
+      ]
+    },
+    "STMG-GF": {
+      "nom": "STMG - Gestion et Finance",
+      "description": "Gestion financière et comptable des organisations.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-stmg-sciences-et-technologies-du-management-et-de-la-gestion-enseignement-specifique-gestion-et-finance",
+      "riasec": [
+        "C",
+        "E"
+      ]
+    },
+    "STMG-Mercatique": {
+      "nom": "STMG - Mercatique (Marketing)",
+      "description": "Étude des marchés et stratégies commerciales.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-stmg-sciences-et-technologies-du-management-et-de-la-gestion-enseignement-specifique-mercatique",
+      "riasec": [
+        "C",
+        "E"
+      ]
+    },
+    "STMG-RHC": {
+      "nom": "STMG - Ressources Humaines et Communication",
+      "description": "Gestion des ressources humaines et communication interne.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-stmg-sciences-et-technologies-du-management-et-de-la-gestion-enseignement-specifique-ressources-humaines-et-communication",
+      "riasec": [
+        "C",
+        "E"
+      ]
+    },
+    "STMG-SIG": {
+      "nom": "STMG - Systèmes d'Information de Gestion",
+      "description": "Gestion des systèmes d'information et des bases de données.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-stmg-sciences-et-technologies-du-management-et-de-la-gestion-enseignement-specifique-systemes-d-information-de-gestion",
+      "riasec": [
+        "C",
+        "E"
+      ]
+    }
+  },
+  "pro": {
+    "16770": {
+      "nom": "BAC PRO Conducteur transport routier marchandises",
+      "description": "Prépare à la conduite professionnelle de véhicules lourds et à la gestion logistique des trajets.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-conducteur-transport-routier-marchandises",
+      "riasec": [
+        "R",
+        "E"
+      ]
+    },
+    "20692": {
+      "nom": "hygiene, proprete, sterilisation",
+      "description": "Forme à nettoyer et désinfecter des lieux sensibles comme les hôpitaux.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-hygiene,-proprete,-sterilisation",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "22694": {
+      "nom": "transport",
+      "description": "Forme à organiser les livraisons et les déplacements de marchandises.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-transport",
+      "riasec": [
+        "C",
+        "R"
+      ]
+    },
+    "24740": {
+      "nom": "metiers du cuir option maroquinerie",
+      "description": "Forme à créer des sacs, ceintures et objets en cuir.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-metiers-du-cuir-option-maroquinerie",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "25353": {
+      "nom": "Cybersécurité, Informatique et Réseaux, Électronique",
+      "description": "Forme à installer et maintenir des réseaux informatiques et des systèmes électroniques.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-systemes-numeriques",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "25354": {
+      "nom": "Cybersécurité, Informatique et Réseaux, Électronique",
+      "description": "Forme à gérer la sécurité des systèmes informatiques et des réseaux.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-systemes-numeriques",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "26334": {
+      "nom": "Cybersécurité, Informatique et Réseaux, Électronique",
+      "description": "Forme à installer des équipements audio et vidéo dans les maisons ou entreprises.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-systemes-numeriques-option-b-:-audiovisuels,-reseau",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "26335": {
+      "nom": "Cybersécurité, Informatique et Réseaux, Électronique",
+      "description": "Apprend à installer et gérer des réseaux informatiques.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-systemes-numeriques-option-c-:-reseaux-informatiques",
+      "riasec": [
+        "I",
+        "R"
+      ]
+    },
+    "32208": {
+      "nom": "metiers du commerce et de la vente option a animation et gestion de l'espace commercial",
+      "description": "Apprend à organiser un magasin et à gérer les ventes.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-commerce-et-vente-option-a-:-animation-et-gestion-de-l-espace-commercial",
+      "riasec": [
+        "E",
+        "S"
+      ]
+    },
+    "35634": {
+      "nom": "35634",
+      "description": "",
+      "lien": "",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "35844": {
+      "nom": "Bac pro technicien du bâtiment : organisation et réalisation du gros œuvre",
+      "description": "Prépare à coordonner et réaliser les travaux de gros œuvre sur un chantier.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-du-batiment-organisation-et-realisation-du-gros-oeuvre",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "35846": {
+      "nom": "Bac pro technicien en installation des systèmes énergétiques et climatiques",
+      "description": "Forme à installer et maintenir des systèmes de chauffage et de climatisation.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-en-installation-des-systemes-energetiques-et-climatiques",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "36191": {
+      "nom": "etude et definition de produits industriels",
+      "description": "Apprend à concevoir des pièces techniques pour l’industrie.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-etude-et-definition-de-produits-industriels",
+      "riasec": [
+        "I",
+        "R"
+      ]
+    },
+    "3632": {
+      "nom": "maintenance des equipements industriels",
+      "description": "Apprend à réparer et entretenir les machines d’usine.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-maintenance-des-equipements-industriels",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "36335": {
+      "nom": "artisanat et metiers d'art option marchandisage visuel",
+      "description": "Prépare à mettre en valeur les produits dans les magasins.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-marchandisage-visuel",
+      "riasec": [
+        "A",
+        "E"
+      ]
+    },
+    "36425": {
+      "nom": "artisanat et metiers d'art option : metiers de l'enseigne et de la signaletique",
+      "description": "Apprend à fabriquer des panneaux, enseignes et décorations visuelles.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-metiers-de-l-enseigne-et-de-la-signaletique",
+      "riasec": [
+        "A",
+        "C"
+      ]
+    },
+    "36428": {
+      "nom": "pilote de ligne de production",
+      "description": "Apprend à gérer des machines dans une usine pour fabriquer des produits.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-pilote-de-ligne-de-production",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "37230": {
+      "nom": "metiers du cuir option chaussures",
+      "description": "Apprend à fabriquer des chaussures en cuir.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-metiers-du-cuir-option-chaussures",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "37231": {
+      "nom": "accompagnement soins et services a la personne",
+      "description": "Forme à aider les personnes âgées ou malades chez elles, dans des maisons de retraite ou hôpitaux.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-accompagnement-soins-et-services-a-la-personne",
+      "riasec": [
+        "S",
+        "R"
+      ]
+    },
+    "37232": {
+      "nom": "artisanat et metiers d'art option : communication visuelle pluri-media",
+      "description": "Forme à créer des affiches, logos, sites web ou vidéos.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-communication-visuelle-pluri-media",
+      "riasec": [
+        "A",
+        "C"
+      ]
+    },
+    "37233": {
+      "nom": "photographie",
+      "description": "Forme à prendre, retoucher et imprimer des photos pour différents usages.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-photographie",
+      "riasec": [
+        "A",
+        "I"
+      ]
+    },
+    "37308": {
+      "nom": "technicien de fabrication bois et materiaux associes",
+      "description": "Apprend à fabriquer des éléments en bois ou matériaux composites.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-de-fabrication-bois-et-materiaux-associes",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "37375": {
+      "nom": "esthetique cosmetique parfumerie",
+      "description": "Forme à gérer un institut de beauté et à maîtriser des techniques avancées.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-esthetique-cosmetique-parfumerie",
+      "riasec": [
+        "A",
+        "S"
+      ]
+    },
+    "37385": {
+      "nom": "travaux publics",
+      "description": "Forme à la réalisation de chantiers de construction et d'aménagement (routes, réseaux, bâtiments publics).",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-travaux-publics",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "37489": {
+      "nom": "Cybersécurité, Informatique et Réseaux, Électronique",
+      "description": "Forme à installer et réparer des équipements électroniques.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-systemes-electroniques-numeriques",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "37698": {
+      "nom": "maintenance nautique",
+      "description": "Forme à l'entretien et la réparation des bateaux (moteurs, coques, systèmes électriques).",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-maintenance-nautique",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "37699": {
+      "nom": "bio-industries de transformation",
+      "description": "Apprend à fabriquer des produits alimentaires ou cosmétiques en usine.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-bio-industries-de-transformation",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "37908": {
+      "nom": "boulanger-pâtissier",
+      "description": "Forme à fabriquer pains, gâteaux et desserts en boulangerie-pâtisserie.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-boulanger-patissier",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "37909": {
+      "nom": "commercialisation et services en restauration",
+      "description": "Prépare à gérer le service en salle et la relation client dans la restauration.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-commercialisation-et-services-en-restauration",
+      "riasec": [
+        "S",
+        "E"
+      ]
+    },
+    "37910": {
+      "nom": "cuisine",
+      "description": "Forme à gérer une cuisine, créer des menus et encadrer une équipe.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-cuisine",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "37913": {
+      "nom": "Carrossier peintre automobile",
+      "description": "Forme à la réparation, la préparation et la peinture des carrosseries de véhicules.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-carrossier-peintre-automobile",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "37914": {
+      "nom": "Bac pro aviation générale",
+      "description": "Prépare aux opérations de maintenance, de préparation et de suivi des aéronefs.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-aviation-generale",
+      "riasec": [
+        "I",
+        "R"
+      ]
+    },
+    "37928": {
+      "nom": "Bac pro aéronautique option avionique",
+      "description": "Forme à installer, contrôler et réparer les systèmes électroniques embarqués des avions.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-aeronautique-option-avionique",
+      "riasec": [
+        "I",
+        "R"
+      ]
+    },
+    "37930": {
+      "nom": "Bac pro pâtisserie",
+      "description": "Apprend à fabriquer des gâteaux, desserts et viennoiseries en boulangerie-pâtisserie.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-patisserie",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "37947": {
+      "nom": "technicien en appareillage orthopedique",
+      "description": "Forme à fabriquer des équipements médicaux sur mesure.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-en-appareillage-orthopedique",
+      "riasec": [
+        "R",
+        "S"
+      ]
+    },
+    "38229": {
+      "nom": "amenagement et finitions du batiment",
+      "description": "Forme à décorer et rénover les bâtiments (peinture, carrelage…).",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-amenagement-et-finitions-du-batiment",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "38308": {
+      "nom": "perruquier posticheur",
+      "description": "Apprend à fabriquer des perruques et postiches pour le spectacle ou la santé.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-perruquier-posticheur",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "38313": {
+      "nom": "Bac pro technicien modeleur",
+      "description": "Forme à concevoir et réaliser des modèles et prototypes pour l’industrie.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-modeleur",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "38318": {
+      "nom": "laboratoire controle qualite",
+      "description": "Forme à vérifier la qualité des produits fabriqués.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-laboratoire-controle-qualite",
+      "riasec": [
+        "I",
+        "C"
+      ]
+    },
+    "38337": {
+      "nom": "technicien en chaudronnerie industrielle",
+      "description": "Apprend à fabriquer des structures métalliques pour l’industrie.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-en-chaudronnerie-industrielle",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "38386": {
+      "nom": "Bac pro jardinerie pépinière",
+      "description": "Forme à cultiver et vendre des plantes, arbres et arbustes en pépinière.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-jardinerie-pepiniere",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "38397": {
+      "nom": "metiers de l'accueil",
+      "description": "Apprend à accueillir et orienter les visiteurs ou clients.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-metiers-de-l-accueil",
+      "riasec": [
+        "S",
+        "E"
+      ]
+    },
+    "38399": {
+      "nom": "Métiers du commerce et de la vente",
+      "description": "Forme à chercher des clients, négocier et vendre des produits ou services.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-vente-(prospection---negociation---suivi-de-clientele)",
+      "riasec": [
+        "E",
+        "S"
+      ]
+    },
+    "38422": {
+      "nom": "faconnage de produits imprimes, routage",
+      "description": "Apprend à préparer et envoyer des documents imprimés.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-faconnage-de-produits-imprimes,-routage",
+      "riasec": [
+        "C",
+        "R"
+      ]
+    },
+    "38423": {
+      "nom": "microtechniques",
+      "description": "Apprend à fabriquer et réparer de petits objets techniques (montres, appareils médicaux…).",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-microtechniques",
+      "riasec": [
+        "I",
+        "R"
+      ]
+    },
+    "38456": {
+      "nom": "optique lunetterie",
+      "description": "Forme à fabriquer et vendre des lunettes et à conseiller les clients.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-optique-lunetterie",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "38499": {
+      "nom": "procedes de la chimie, de l'eau et des papiers-cartons",
+      "description": "Apprend à travailler dans des usines de produits chimiques ou de traitement de l’eau.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-procedes-de-la-chimie,-de-l-eau-et-des-papiers-cartons",
+      "riasec": [
+        "I",
+        "R"
+      ]
+    },
+    "38567": {
+      "nom": "realisation de produits imprimes et plurimedia option b productions imprimees",
+      "description": "Apprend à imprimer et façonner des documents.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-realisation-de-produits-imprimes-et-plurimedia-option-b-:-productions-imprimees",
+      "riasec": [
+        "C",
+        "R"
+      ]
+    },
+    "38729": {
+      "nom": "metiers de la mode - vêtement",
+      "description": "Apprend à créer et fabriquer des vêtements.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-metiers-de-la-mode---vetement",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "38878": {
+      "nom": "metiers de l'electricite et de ses environnements connectes",
+      "description": "Forme à installer et entretenir des systèmes électriques modernes.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-metiers-de-l-electricite-et-de-ses-environnements-connectes",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "38881": {
+      "nom": "conduite de productions horticoles",
+      "description": "Forme à la gestion des cultures horticoles (légumes, fleurs, plantes) et à l'utilisation d'outils agricoles.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-conduite-de-productions-horticoles",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "39033": {
+      "nom": "Bac pro technicien d'études du bâtiment option B assistant en architecture",
+      "description": "Apprend à réaliser des plans, maquettes et dossiers techniques pour des projets architecturaux.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-d'etudes-du-batiment-option-b-assistant-en-architecture",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "39133": {
+      "nom": "metiers de la securite",
+      "description": "Prépare à assurer la sécurité des lieux et des personnes.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-metiers-de-la-securite",
+      "riasec": [
+        "R",
+        "E"
+      ]
+    },
+    "39269": {
+      "nom": "technicien geometre-topographe",
+      "description": "Apprend à mesurer les terrains et à réaliser des plans pour les constructions.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-geometre-topographe",
+      "riasec": [
+        "I",
+        "R"
+      ]
+    },
+    "39327": {
+      "nom": "Bac pro maintenance des matériels option B : matériels de construction et de manutention",
+      "description": "Forme à diagnostiquer, réparer et optimiser les performances des engins de chantier et de manutention.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-maintenance-des-materiels-option-b-:-materiels-de-construction-et-de-manutention",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "39514": {
+      "nom": "ouvrages du batiment : metallerie",
+      "description": "Apprend à fabriquer et poser des éléments métalliques dans les bâtiments.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-ouvrages-du-batiment-:-metallerie",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "39516": {
+      "nom": "Bac pro traitements des matériaux",
+      "description": "Apprend à appliquer des traitements de surface pour protéger ou améliorer les matériaux.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-traitements-des-materiaux",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "39646": {
+      "nom": "artisanat et metiers d'art option : tapissier d'ameublement",
+      "description": "Forme à refaire ou créer des sièges, rideaux, coussins.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-tapissier-d-ameublement",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "39806": {
+      "nom": "menuiserie aluminium-verre",
+      "description": "Forme à fabriquer et poser des éléments en alu et verre.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-menuiserie-aluminium-verre",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "40009": {
+      "nom": "Bac pro maintenance des véhicules",
+      "description": "Forme à entretenir et réparer différents types de véhicules.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-maintenance-des-vehicules",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "40012": {
+      "nom": "Construction et aménagement de véhicules",
+      "description": "Prépare à la fabrication, l'assemblage et l'aménagement d'éléments pour véhicules (carrosserie, habillage).",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-construction-et-amenagement-de-vehicules",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "40311": {
+      "nom": "Bac pro maintenance environnementale et propreté des espaces urbains",
+      "description": "Prépare aux métiers de la propreté urbaine, de l’entretien des espaces publics et de la gestion des équipements collectifs.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-maintenance-environnementale-et-proprete-des-espaces-urbains",
+      "riasec": [
+        "R",
+        "S"
+      ]
+    },
+    "40687": {
+      "nom": "logistique",
+      "description": "Apprend à organiser le stockage et les livraisons de marchandises.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-logistique",
+      "riasec": [
+        "C",
+        "R"
+      ]
+    },
+    "40705": {
+      "nom": "AGORA",
+      "description": "Forme à gérer les tâches administratives d’une entreprise.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-assistance-a-la-gestion-des-organisations-et-de-leurs-activites-(agora).",
+      "riasec": [
+        "C",
+        "S"
+      ]
+    },
+    "40706": {
+      "nom": "Bac pro conducteur routier de marchandises",
+      "description": "Prépare à conduire des poids lourds et assurer le transport sécurisé de marchandises.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-conducteur-routier-de-marchandises",
+      "riasec": [
+        "R",
+        "E"
+      ]
+    },
+    "40707": {
+      "nom": "metiers de la coiffure",
+      "description": "Forme à gérer un salon de coiffure et à maîtriser des techniques avancées.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-metiers-de-la-coiffure",
+      "riasec": [
+        "S",
+        "A"
+      ]
+    },
+    "40993": {
+      "nom": "organisation de transport de marchandises",
+      "description": "Apprend à planifier les livraisons et les trajets des camions ou colis.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-organisation-de-transport-de-marchandises",
+      "riasec": [
+        "C",
+        "R"
+      ]
+    },
+    "41014": {
+      "nom": "interventions sur le patrimoine bati, option a maconnerie",
+      "description": "Apprend à restaurer des bâtiments anciens en respectant les techniques traditionnelles.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-interventions-sur-le-patrimoine-bati-option-a-:-maconnerie",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "41015": {
+      "nom": "Technicien en réalisation de produits mécaniques, option réalisation et suivi de productions, option réalisation et maintenance des outillages",
+      "description": "Apprend à fabriquer des pièces mécaniques avec des machines.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-en-realisation-de-produits-mecaniques,-option-realisation-et-suivi-de-productions,-option-realisation-et-maintenance-des-outillages",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "41062": {
+      "nom": "technicien conseil vente univers jardinerie",
+      "description": "Prépare à conseiller et vendre des produits de jardinerie, avec des connaissances en botanique.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-conseil-vente-univers-jardinerie",
+      "riasec": [
+        "E",
+        "R"
+      ]
+    },
+    "41063": {
+      "nom": "technicien en prothese dentaire",
+      "description": "Forme à fabriquer des dents artificielles et appareils dentaires.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-en-prothese-dentaire",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "41187": {
+      "nom": "animation - enfance et personnes agees",
+      "description": "Prépare à organiser des activités pour enfants ou seniors.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-animation---enfance-et-personnes-agees",
+      "riasec": [
+        "S",
+        "A"
+      ]
+    },
+    "41837": {
+      "nom": "etude et realisation d'agencement",
+      "description": "Forme à créer et installer des aménagements intérieurs.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-etude-et-realisation-d-agencement",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "41866": {
+      "nom": "Bac pro technicien constructeur bois",
+      "description": "Forme à concevoir, fabriquer et poser des structures et ouvrages en bois.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-constructeur-bois",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "41867": {
+      "nom": "technicien menuisier agenceur",
+      "description": "Forme à fabriquer et installer des meubles et aménagements intérieurs.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-menuisier-agenceur",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "41938": {
+      "nom": "technicien conseil vente en alimentation (produits alimentaires et boissons)",
+      "description": "Forme à conseiller et vendre des produits alimentaires et boissons, avec une approche commerciale.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-conseil-vente-en-alimentation-(produits-alimentaires-et-boissons)",
+      "riasec": [
+        "E",
+        "S"
+      ]
+    },
+    "41940": {
+      "nom": "technicien du batiment : organisation et realisation du gros oeuvre",
+      "description": "Apprend à organiser et réaliser la structure des bâtiments.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-du-batiment-:-organisation-et-realisation-du-gros-oeuvre",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "420": {
+      "nom": "Bac pro construction bâtiment gros œuvre",
+      "description": "Prépare à construire des fondations, murs et structures en béton ou maçonnerie.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-construction-batiment-gros-oeuvre",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "42117": {
+      "nom": "Installateur en chauffage, climatisation et énergies renouvelables",
+      "description": "Apprend à installer et entretenir les systèmes de chauffage, ventilation et climatisation.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-installateur-en-chauffage,-climatisation-et-energies-renouvelables",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "42118": {
+      "nom": "Bac pro maintenance des systèmes de production connectés",
+      "description": "Forme à entretenir, diagnostiquer et réparer des équipements industriels automatisés et connectés.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-maintenance-des-systemes-de-production-connectes",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "42128": {
+      "nom": "Bac pro métiers de l'entretien des textiles",
+      "description": "Forme à nettoyer et entretenir les textiles dans un commerce spécialisé.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-metiers-de-l-entretien-des-textiles",
+      "riasec": [
+        "C",
+        "R"
+      ]
+    },
+    "422": {
+      "nom": "technicien outilleur",
+      "description": "Apprend à fabriquer des outils pour les machines industrielles.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-outilleur",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "42761": {
+      "nom": "Maintenance et efficacité énergétique",
+      "description": "Forme à entretenir les systèmes de chauffage, climatisation et ventilation.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-maintenance-et-efficacite-energetique",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "42762": {
+      "nom": "Métiers du froid et des énergies renouvelables",
+      "description": "Forme à installer et entretenir les systèmes de réfrigération et climatisation.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-metiers-du-froid-et-des-energies-renouvelables",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "4424": {
+      "nom": "technicien d'etudes du batiment option a : etudes et economie",
+      "description": "Apprend à calculer les coûts et organiser les travaux d’un chantier.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-d-etudes-du-batiment-option-a-:-etudes-et-economie",
+      "riasec": [
+        "I",
+        "C"
+      ]
+    },
+    "4433": {
+      "nom": "Technicien en installation des systèmes énergétiques et climatiques",
+      "description": "Apprend à installer et entretenir les systèmes de chauffage, ventilation et climatisation.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-en-installation-des-systemes-energetiques-et-climatiques",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "4434": {
+      "nom": "Technicien de maintenance des systèmes énergétiques et climatiques",
+      "description": "Forme à entretenir les systèmes de chauffage, climatisation et ventilation.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-de-maintenance-des-systemes-energetiques-et-climatiques",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "4556": {
+      "nom": "services de proximite et vie locale",
+      "description": "Apprend à aider les personnes dans leur quotidien et à organiser des activités locales.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-services-de-proximite-et-vie-locale",
+      "riasec": [
+        "S",
+        "C"
+      ]
+    },
+    "4895": {
+      "nom": "Bac pro aménagement et finitions du bâtiment",
+      "description": "Forme à réaliser les travaux de finition et d'aménagement intérieur.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-amenagement-et-finitions-du-batiment",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "510": {
+      "nom": "maintenance des vehicules option a voitures particulieres",
+      "description": "Forme à réparer et entretenir les voitures.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-maintenance-des-vehicules-option-a-:-voitures-particulieres",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "5291": {
+      "nom": "artisanat et metiers d'art option : verrerie scientifique et technique",
+      "description": "Apprend à fabriquer des objets en verre pour la science ou l’industrie.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-verrerie-scientifique-et-technique",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "5640": {
+      "nom": "technicien d'etudes du batiment option b : assistant en architecture",
+      "description": "Forme à dessiner les plans et aider les architectes.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-technicien-d-etudes-du-batiment-option-b-:-assistant-en-architecture",
+      "riasec": [
+        "A",
+        "C"
+      ]
+    },
+    "700": {
+      "nom": "maintenance des vehicules option c motocycles",
+      "description": "Forme à réparer les motos et scooters.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-maintenance-des-vehicules-option-c-:-motocycles",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "7586": {
+      "nom": "Bac pro bio-industries de transformation",
+      "description": "Apprend à fabriquer et transformer des produits issus de la biologie et de l'agroalimentaire.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-bio-industries-de-transformation",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "763": {
+      "nom": "Bac pro ouvrages du bâtiment : métallerie",
+      "description": "Forme à fabriquer et poser des éléments métalliques pour le bâtiment.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-ouvrages-du-batiment-metallerie",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "RNCP35634": {
+      "nom": "RNCP35634",
+      "description": "Formation professionnelle axée sur les systèmes numériques et l'informatique.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-systèmes-numériques",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    }
   },
   "CAP": {
-"37299": {
-    "nom": "accessoiriste realisateur",
-    "description": "Apprend à fabriquer des objets pour le cinéma, le théâtre ou les spectacles.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-accessoiriste-realisateur",
-    "riasec": ["A", "R"]
-  },
-"38565": {
-    "nom": "accompagnant educatif petite enfance",
-    "description": "Prépare à s’occuper de jeunes enfants à la maison ou en crèche.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-accompagnant-educatif-petite-enfance",
-    "riasec": ["S", "R"]
-  },
-"42799": {
-    "nom": "agent de la qualite de l'eau",
-    "description": "Forme à surveiller et traiter l’eau pour qu’elle soit propre.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-agent-de-la-qualite-de-l-eau",
-    "riasec": ["R", "I"]
-  },
-"40309": {
-    "nom": "agent de proprete et d'hygiene",
-    "description": "Apprend à nettoyer et désinfecter des lieux publics ou privés.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-agent-de-proprete-et-d-hygiene",
-    "riasec": ["R", "C"]
-  },
-"38226": {
-    "nom": "agent de securite",
-    "description": "Prépare à surveiller des lieux et assurer la sécurité des personnes.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-agent-de-securite",
-    "riasec": ["R", "E"]
-  },
-"794": {
-    "nom": "agent polyvalent de restauration",
-    "description": "Apprend à aider en cuisine et en salle dans les cantines ou restaurants.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-agent-polyvalent-de-restauration",
-    "riasec": ["R", "C"]
-  },
-"36336": {
-    "nom": "art et techniques de la bijouterie-joaillerie option bijouterie-joaillerie",
-    "description": "Apprend à créer et réparer des bijoux.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-bijouterie-joaillerie-option-bijouterie-joaillerie",
-    "riasec": ["A", "R"]
-  },
-"36336": {
-    "nom": "art et techniques de la bijouterie-joaillerie option bijouterie-sertissage",
-    "description": "Forme à poser les pierres précieuses sur les bijoux.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-bijouterie-joaillerie-option-bijouterie-sertissage",
-    "riasec": ["A", "R"]
-  },
-"36336": {
-    "nom": "art et techniques de la bijouterie-joaillerie option polissage-finition",
-    "description": "Apprend à rendre les bijoux brillants et bien finis.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-bijouterie-joaillerie-option-polissage-finition",
-    "riasec": ["A", "R"]
-  },
-"42105": {
-    "nom": "arts de la broderie",
-    "description": "Apprend à décorer des tissus avec des fils et motifs.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-arts-de-la-broderie",
-    "riasec": ["A", "C"]
-  },
-"37539": {
-    "nom": "arts de la reliure",
-    "description": "Forme à réparer et décorer des livres.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-arts-de-la-reliure",
-    "riasec": ["A", "R"]
-  },
-"42113": {
-    "nom": "Arts du tapis et de la tapisserie de lisse",
-    "description": "Apprend à tisser des tapis et des tentures décoratives.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-arts-du-tapis-et-de-la-tapisserie-de-lisse",
-    "riasec": ["A", "R"]
-  },
-"37302": {
-    "nom": "arts et techniques du verre option decorateur",
-    "description": "Forme à décorer des objets en verre.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-verre-decorateur",
-    "riasec": ["A", "R"]
-  },
-"37302": {
-    "nom": "arts et techniques du verre option vitrailliste",
-    "description": "Apprend à créer des vitraux pour les bâtiments.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-verre-vitrailliste",
-    "riasec": ["A", "R"]
-  },
-"37669": {
-    "nom": "assistant(e) technique en milieux familial et collectif",
-    "description": "Prépare à aider dans les tâches du quotidien (repas, ménage, soins) pour les familles ou collectivités.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-assistant(e)-technique-en-milieux-familial-et-collectif",
-    "riasec": ["S", "C"]
-  },
-"42115": {
-    "nom": "boulanger",
-    "description": "Apprend à faire du pain, des viennoiseries et à gérer un fournil.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-boulanger",
-    "riasec": ["R", "C"]
-  },
-"42134": {
-    "nom": "bronzier option A : monteur en bronze",
-    "description": "Apprend à assembler des pièces en bronze pour objets décoratifs ou techniques.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-bronzier-option-a-:-monteur-en-bronze",
-    "riasec": ["R", "A"]
-  },
-"39328": {
-    "nom": "carreleur mosaiste",
-    "description": "Forme à poser du carrelage et créer des décors en mosaïque.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-carreleur-mosaiste",
-    "riasec": ["R", "A"]
-  },
-"37241": {
-    "nom": "chaussure",
-    "description": "Apprend à fabriquer ou réparer des chaussures.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-chaussure",
-    "riasec": ["R", "C"]
-  },
-"5364": {
-    "nom": "coiffure",
-    "description": "Prépare à couper, coiffer et conseiller les clients.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-coiffure",
-    "riasec": ["S", "A"]
-  },
-"38424": {
-    "nom": "commercialisation et services en hotel-cafe-restaurant",
-    "description": "Forme à servir les clients dans les cafés, hôtels et restaurants.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-commercialisation-et-services-en-hotel-cafe-restaurant",
-    "riasec": ["S", "E"]
-  },
-"38429": {
-    "nom": "Commercialisation et services en restauration",
-    "description": "Prépare à servir les clients dans les restaurants.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-restaurant",
-    "riasec": ["S", "R"]
-  },
-"36429": {
-    "nom": "conducteur d'installations de production",
-    "description": "Apprend à faire fonctionner des machines dans une usine.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-conducteur-d-installations-de-production",
-    "riasec": ["R", "C"]
-  },
-"42122": {
-    "nom": "cordonnerie multiservice",
-    "description": "Forme à réparer chaussures, clés, montres et autres objets du quotidien.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-cordonnerie-multiservice",
-    "riasec": ["R", "C"]
-  },
-"41834": {
-    "nom": "couvreur",
-    "description": "Apprend à poser et réparer les toits des bâtiments.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-couvreur",
-    "riasec": ["R", "I"]
-  },
-"38430": {
-    "nom": "cuisine",
-    "description": "Prépare à cuisiner dans des restaurants ou cantines.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-cuisine",
-    "riasec": ["R", "A"]
-  },
-"36338": {
-    "nom": "decoration en ceramique",
-    "description": "Apprend à décorer des objets en terre cuite ou porcelaine.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-decoration-en-ceramique",
-    "riasec": ["A", "R"]
-  },
-"38403": {
-    "nom": "distribution d'objets et services a la clientele",
-    "description": "Forme à livrer et présenter des produits aux clients.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-distribution-d-objets-et-services-a-la-clientele",
-    "riasec": ["C", "S"]
-  },
-"37538": {
-    "nom": "ebeniste",
-    "description": "Apprend à fabriquer et restaurer des meubles en bois.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-ebeniste",
-    "riasec": ["R", "A"]
-  },
-"38401": {
-    "nom": "electricien",
-    "description": "Prépare à installer et réparer les systèmes électriques.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-electricien",
-    "riasec": ["R", "I"]
-  },
-"684": {
-    "nom": "employe de commerce multi-specialites",
-    "description": "Apprend à gérer les rayons, les stocks et à conseiller les clients.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-employe-de-commerce-multi-specialites",
-    "riasec": ["C", "S"]
-  },
-"1179": {
-    "nom": "employe de vente specialise option b : produits d'equipement courant",
-    "description": "Prépare à vendre des produits comme électroménager ou bricolage.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-employe-de-vente-specialise-option-b-:-produits-d-equipement-courant",
-    "riasec": ["C", "E"]
-  },
-"834": {
-    "nom": "employe de vente specialise option c : service a la clientele",
-    "description": "Forme à accueillir et aider les clients dans leurs achats.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-employe-de-vente-specialise-option-c-:-service-a-la-clientele",
-    "riasec": ["S", "C"]
-  },
-"4636": {
-    "nom": "employe de vente specialise option D : librairie-papeterie-presse",
-    "description": "Apprend à vendre des livres, des fournitures et à conseiller les clients.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-employe-de-vente-specialise-option-d-:-librairie-papeterie-presse",
-    "riasec": ["C", "S"]
-  },
-"40994": {
-    "nom": "equipier polyvalent du commerce",
-    "description": "Forme à travailler dans différents rayons d’un magasin.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-equipier-polyvalent-du-commerce",
-    "riasec": ["C", "S"]
-  },
-"39030": {
-    "nom": "esthetique cosmetique parfumerie",
-    "description": "Apprend à faire des soins du visage, du maquillage et à conseiller des produits.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-esthetique-cosmetique-parfumerie",
-    "riasec": ["A", "S"]
-  },
-"37243": {
-    "nom": "fourrure",
-    "description": "Apprend à travailler la peau et la fourrure pour créer des vêtements ou accessoires.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-fourrure",
-    "riasec": ["A", "R"]
-  },
-"37896": {
-    "nom": "horlogerie",
-    "description": "Apprend à réparer et assembler des montres et horloges.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-horlogerie",
-    "riasec": ["R", "I"]
-  },
-"39699": {
-    "nom": "industries chimiques",
-    "description": "Apprend à travailler dans des usines de produits chimiques.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-industries-chimiques",
-    "riasec": ["R", "I"]
-  },
-"38305": {
-    "nom": "installateur sanitaire",
-    "description": "Forme à poser et réparer les équipements de plomberie.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-installateur-sanitaire",
-    "riasec": ["R", "C"]
-  },
-"38306": {
-    "nom": "installateur thermique",
-    "description": "Apprend à installer des systèmes de chauffage.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-installateur-thermique",
-    "riasec": ["R", "C"]
-  },
-"41833": {
-    "nom": "intervention en maintenance technique des batiments",
-    "description": "Forme à réparer et entretenir les équipements d’un bâtiment.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-intervention-en-maintenance-technique-des-batiments",
-    "riasec": ["R", "I"]
-  },
-"601": {
-    "nom": "maintenance de batiments de collectivites",
-    "description": "Forme à entretenir les locaux publics (écoles, hôpitaux…).",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-maintenance-de-batiments-de-collectivites",
-    "riasec": ["R", "C"]
-  },
-"40997": {
-    "nom": "Maintenance des véhicules option véhicules légers",
-    "description": "Apprend à faire l’entretien courant des voitures.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-maintenance-des-vehicules-option-vehicules-legers",
-    "riasec": ["R", "I"]
-  },
-"38712": {
-    "nom": "maroquinerie",
-    "description": "Apprend à fabriquer des sacs, ceintures et objets en cuir.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-maroquinerie",
-    "riasec": ["R", "A"]
-  },
-"37893": {
-    "nom": "menuisier aluminium-verre",
-    "description": "Apprend à fabriquer et poser des éléments en alu et verre (portes, fenêtres…).",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-menuisier-aluminium-verre",
-    "riasec": ["R", "C"]
-  },
-"41835": {
-    "nom": "menuisier fabricant",
-    "description": "Forme à fabriquer des meubles ou éléments en bois en atelier.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-menuisier-fabricant",
-    "riasec": ["R", "A"]
-  },
-"41835": {
-    "nom": "menuisier fabricant de menuiserie, mobilier et agencement",
-    "description": "Apprend à créer des meubles et à aménager des espaces intérieurs.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-menuisier-fabricant-de-menuiserie,-mobilier-et-agencement",
-    "riasec": ["R", "A"]
-  },
-"41836": {
-    "nom": "menuisier installateur",
-    "description": "Prépare à poser des éléments en bois sur les chantiers.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-menuisier-installateur",
-    "riasec": ["R", "C"]
-  },
-"41831": {
-    "nom": "metallier",
-    "description": "Apprend à travailler le métal pour fabriquer des structures ou des éléments décoratifs.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-metallier",
-    "riasec": ["R", "I"]
-  },
-"42127": {
-    "nom": "Métiers de l’entretien des textiles, option A : blanchisserie, option B : pressing",
-    "description": "Forme à nettoyer et entretenir les vêtements dans un commerce spécialisé.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-metiers-de-l’entretien-des-textiles,-option-a-:-blanchisserie,-option-b-:-pressing",
-    "riasec": ["C", "R"]
-  },
-"39266": {
-    "nom": "metiers de la coiffure",
-    "description": "Apprend à couper, coiffer et conseiller les clients.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-metiers-de-la-coiffure",
-    "riasec": ["S", "A"]
-  },
-"42123": {
-    "nom": "metiers de la mode : chapelier-modiste",
-    "description": "Forme à fabriquer des chapeaux et accessoires de mode.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-metiers-de-la-mode-:-chapelier-modiste",
-    "riasec": ["A", "R"]
-  },
-"42124": {
-    "nom": "metiers de la mode-vêtement flou",
-    "description": "Apprend à coudre des vêtements souples comme des robes ou blouses.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-metiers-de-la-mode---vetement-flou",
-    "riasec": ["A", "R"]
-  },
-"42125": {
-    "nom": "metiers de la mode-vêtement tailleur",
-    "description": "Forme à réaliser des vêtements structurés comme des vestes ou pantalons.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-metiers-de-la-mode---vetement-tailleur",
-    "riasec": ["A", "R"]
-  },
-"39703": {
-    "nom": "metiers de l'enseigne et de la signaletique",
-    "description": "Apprend à fabriquer des panneaux et enseignes pour les commerces.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-metiers-de-l-enseigne-et-de-la-signaletique",
-    "riasec": ["A", "C"]
-  },
-"42128": {
-    "nom": "metiers de l'entretien des textiles, option b : pressing",
-    "description": "Forme à nettoyer et traiter les vêtements dans un commerce spécialisé.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-metiers-de-l-entretien-des-textiles,-option-b-:-pressing",
-    "riasec": ["C", "R"]
-  },
-"38305": {
-    "nom": "monteur en installations sanitaires",
-    "description": "Forme à poser les équipements de plomberie dans les bâtiments.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-monteur-en-installations-sanitaires",
-    "riasec": ["R", "C"]
-  },
-"38306": {
-    "nom": "monteur en installations thermiques",
-    "description": "Apprend à installer des systèmes de chauffage.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-monteur-en-installations-thermiques",
-    "riasec": ["R", "C"]
-  },
-"37486": {
-    "nom": "operateur en appareillage orthopedique - specialite orthoprothese",
-    "description": "Forme à fabriquer des prothèses pour aider les personnes à marcher ou bouger.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-operateur-en-appareillage-orthopedique---specialite-orthoprothese",
-    "riasec": ["R", "S"]
-  },
-"37487": {
-    "nom": "operateur en appareillage orthopedique - specialite podo-orthese",
-    "description": "Apprend à fabriquer des semelles et chaussures adaptées aux personnes ayant des problèmes de marche.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-operateur-en-appareillage-orthopedique---specialite-podo-orthese",
-    "riasec": ["R", "S"]
-  },
-"38403": {
-    "nom": "operateur/operatrice de service-relation client et livraison",
-    "description": "Forme à livrer des produits et à bien communiquer avec les clients.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-operateur/operatrice-de-service---relation-client-et-livraison",
-    "riasec": ["S", "C"]
-  },
-"42586": {
-    "nom": "operateur/operatrice logistique",
-    "description": "Apprend à organiser les stocks et les livraisons dans un entrepôt.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-operateur/operatrice-logistique",
-    "riasec": ["C", "R"]
-  },
-"37486": {
-    "nom": "Opérateur en appareillage orthopédique - Spécialité orthoprothèse",
-    "description": "Apprend à fabriquer des prothèses pour aider les personnes à se déplacer ou se soigner.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-operateur-en-appareillage-orthopedique---specialite-orthoprothese",
-    "riasec": ["R", "S"]
-  },
-"42106": {
-    "nom": "outillages en outils a decouper et a emboutir",
-    "description": "Forme à fabriquer des outils pour découper ou former des pièces métalliques.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-outillages-en-outils-a-decouper-et-a-emboutir",
-    "riasec": ["R", "I"]
-  },
-"38765": {
-    "nom": "patissier",
-    "description": "Apprend à faire des gâteaux, tartes et desserts.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-patissier",
-    "riasec": ["R", "A"]
-  },
-"39036": {
-    "nom": "peintre applicateur de revetements",
-    "description": "Forme à peindre et poser des revêtements sur les murs et sols.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-peintre-applicateur-de-revetements",
-    "riasec": ["R", "C"]
-  },
-"39036": {
-    "nom": "peintre-applicateur de revetement",
-    "description": "(identique au précédent, formulation alternative)",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-peintre-applicateur-de-revetement",
-    "riasec": ["R", "C"]
-  },
-"38565": {
-    "nom": "petite enfance",
-    "description": "Prépare à s’occuper de jeunes enfants dans les crèches ou écoles.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-petite-enfance",
-    "riasec": ["S", "R"]
-  },
-"37487": {
-    "nom": "podo-orthesiste",
-    "description": "Apprend à fabriquer des chaussures et semelles adaptées aux besoins médicaux.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-podo-orthesiste",
-    "riasec": ["R", "S"]
-  },
-"38401": {
-    "nom": "Électricien",
-    "description": "Forme à installer et réparer des équipements électriques.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-electricien",
-    "riasec": ["R", "I"]
-  },
-"42120": {
-    "nom": "production et service en restauration (rapide, collective, cafeteria)",
-    "description": "Prépare à travailler dans les cantines, fast-foods ou cafétérias.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-production-et-service-en-restauration-(rapide,-collective,-cafeteria)",
-    "riasec": ["R", "S"]
-  },
-"7140": {
-    "nom": "realisation en chaudronnerie industrielle",
-    "description": "Forme à fabriquer des pièces métalliques pour l’industrie.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-realisation-en-chaudronnerie-industrielle",
-    "riasec": ["R", "I"]
-  },
-"7366": {
-    "nom": "realisations industrielles en chaudronnerie ou soudage option a chaudronnerie",
-    "description": "Apprend à assembler des pièces métalliques pour des machines ou structures.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-realisations-industrielles-en-chaudronnerie-ou-soudage-option-a-:-chaudronnerie",
-    "riasec": ["R", "I"]
-  },
-"1132": {
-    "nom": "rentrayeur option A : tapis",
-    "description": "Apprend à réparer et restaurer des tapis anciens ou abîmés.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-rentrayeur-option-a-:-tapis",
-    "riasec": ["A", "R"]
-  },
-"715": {
-    "nom": "rentrayeur option B : tapisserie",
-    "description": "Forme à restaurer des tapisseries décoratives.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-rentrayeur-option-b-:-tapisserie",
-    "riasec": ["A", "R"]
-  },
-"38411": {
-    "nom": "serigraphie industrielle",
-    "description": "Apprend à imprimer des images ou textes sur différents supports (textile, métal…).",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-serigraphie-industrielle",
-    "riasec": ["A", "C"]
-  },
-"872": {
-    "nom": "serrurier metallier",
-    "description": "Forme à fabriquer et poser des éléments métalliques (portes, grilles…).",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-serrurier-metallier",
-    "riasec": ["R", "I"]
-  },
-"849": {
-    "nom": "services en brasserie-cafe",
-    "description": "Prépare à travailler dans les cafés et brasseries, en salle ou au comptoir.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-services-en-brasserie-cafe",
-    "riasec": ["S", "R"]
-  },
-"31096": {
-    "nom": "services hoteliers",
-    "description": "Forme à accueillir les clients et entretenir les chambres dans les hôtels.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-services-hoteliers",
-    "riasec": ["S", "C"]
-  },
-"37305": {
-    "nom": "signaletique et decors graphiques",
-    "description": "Apprend à créer des visuels pour la décoration ou la communication.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-signaletique-et-decors-graphiques",
-    "riasec": ["A", "C"]
-  },
-"505": {
-    "nom": "signaletique, enseigne et decor",
-    "description": "Forme à fabriquer des enseignes et éléments visuels pour les commerces.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-signaletique,-enseigne-et-decor",
-    "riasec": ["A", "C"]
-  },
-"39940": {
-    "nom": "souffleur de verre option verrerie scientifique",
-    "description": "Apprend à fabriquer des objets en verre pour la science ou l’industrie.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-souffleur-de-verre-option-verrerie-scientifique",
-    "riasec": ["R", "A"]
-  },
-"38310": {
-    "nom": "tailleur de pierre",
-    "description": "Forme à tailler et poser des pierres pour les bâtiments ou monuments.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-tailleur-de-pierre",
-    "riasec": ["R", "A"]
-  },
-"561": {
-    "nom": "vendeur-magasinier en pieces de rechange et equipements automobiles",
-    "description": "Apprend à vendre et gérer les pièces détachées pour les véhicules.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-vendeur-magasinier-en-pieces-de-rechange-et-equipements-automobiles",
-    "riasec": ["C", "R"]
-  },
-"42126": {
-    "nom": "vetement de peau",
-    "description": "Apprend à fabriquer des vêtements en cuir ou peau.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-vetement-de-peau",
-    "riasec": ["A", "R"]
-  },
-"38632": {
-    "nom": "Chocolaterie-confiserie",
-    "description": "Apprend les techniques de fabrication artisanale de chocolats, confiseries et produits sucrés.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-chocolaterie-confiserie",
-    "riasec": ["R", "A"]
-  },
-"570": {
-    "nom": "employe technique de laboratoire",
-    "description": "Forme à réaliser des analyses et tests en laboratoire (chimie, biologie, contrôle qualité).",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-employe-technique-de-laboratoire",
-    "riasec": ["I", "C"]
-  },
-"38386": {
-    "nom": "jardinier paysagiste",
-    "description": "Apprend à créer et entretenir des espaces verts (jardins, parcs) et à utiliser des outils paysagers.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-jardinier-paysagiste",
-    "riasec": ["R", "A"]
-  },
-"40523": {
-    "nom": "metiers de l'agriculture",
-    "description": "Prépare aux tâches agricoles (cultures, élevage, utilisation de machines) et à la gestion d'une exploitation.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-metiers-de-l'agriculture",
-    "riasec": ["R", "I"]
-  },
-"37540": {
-    "nom": "Peintre automobile",
-    "description": "Apprend les techniques de préparation, peinture et finition des carrosseries de véhicules.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-peintre-automobile",
-    "riasec": ["R", "C"]
-  },
-"37601": {
-    "nom": "Carrossier automobile",
-    "description": "Prépare à la réparation et à la restauration des carrosseries de véhicules (tôlerie, soudure).",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-carrossier-automobile",
-    "riasec": ["R", "C"]
-  },
-"42133": {
-    "nom": "Rentrayeur option A tapis, option B tapisserie",
-    "description": "Confectionner des tapis et des tapisseries de lisse à partir d'un carton ou d'une maquette. ",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-rentrayeur-option-a-tapis,-option-b-tapisserie",
-    "riasec": ["A", "R"]
-  },
-"37247": {
-    "nom": "Tapissier d'ameublement en décor",
-    "description": "Réaliser des éléments de décoration intérieure, tels que rideaux, décors de fenêtre et de lit, coussins, tentures murales, draperies.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-tapissier-d'ameublement-en-decor",
-    "riasec": ["A", "R"]
-  },
-"38568": {
-    "nom": "Réalisations industrielles en chaudronnerie ou soudage, option A : chaudronnerie, option B : soudage",
-    "description": "Apprend à assembler des pièces métalliques pour des machines ou structures.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-realisations-industrielles-en-chaudronnerie-ou-soudage,-option-a-:-chaudronnerie,-option-b-:-soudage",
-    "riasec": ["R", "I"]
-  },
-"41830": {
-    "nom": "CAP maçon",
-    "description": "Forme à construire des murs, dalles, fondations et ouvrages en béton ou en pierre.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-macon",
-    "riasec": ["R", "C"]
-  },
-"39330": {
-    "nom": "CAP maintenance des matériels option B : matériels de construction et de manutention",
-    "description": "Apprend à entretenir et réparer les engins de chantier et de manutention.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-maintenance-des-materiels-option-b-:-materiels-de-construction-et-de-manutention",
-    "riasec": ["R", "I"]
-  },
-"41012": {
-    "nom": "CAP charpentier bois",
-    "description": "Apprend à fabriquer et poser des structures en bois pour bâtiments et ouvrages.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-charpentier-bois",
-    "riasec": ["R", "A"]
-  },
-"40485": {
-    "nom": "CAP constructeur de routes et d'aménagements urbains",
-    "description": "Forme à réaliser des chaussées, trottoirs et ouvrages de voirie.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-constructeur-de-routes-et-d'amenagements-urbains",
-    "riasec": ["R", "C"]
-  },
-"40484": {
-    "nom": "CAP constructeur de réseaux de canalisations de travaux publics",
-    "description": "Apprend à installer et entretenir les réseaux d’eau, gaz et assainissement.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-constructeur-de-reseaux-de-canalisations-de-travaux-publics",
-    "riasec": ["R", "C"]
-  },
-"36427": {
-    "nom": "CAP staffeur ornemaniste",
-    "description": "Forme à créer et restaurer des éléments décoratifs en plâtre pour bâtiments.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-staffeur-ornemaniste",
-    "riasec": ["A", "R"]
-  },
-"37533": {
-    "nom": "CAP crémier-fromager",
-    "description": "Apprend à sélectionner, vendre et conseiller sur les fromages et produits laitiers.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-cremier-fromager",
-    "riasec": ["S", "E"]
-  },
-"39647": {
-    "nom": "CAP modèles et moules céramiques",
-    "description": "Forme à fabriquer des moules et prototypes pour l’industrie céramique.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-modeles-et-moules-ceramiques",
-    "riasec": ["A", "R"]
-  },
-"38560": {
-    "nom": "CAP installateur en froid et conditionnement d'air",
-    "description": "Apprend à installer, régler et entretenir des systèmes frigorifiques et climatiques.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-installateur-en-froid-et-conditionnement-d'air",
-    "riasec": ["R", "I"]
-  },
-"37366": {
-    "nom": "CAP cordonnier bottier",
-    "description": "Apprend à réparer, fabriquer et entretenir des chaussures et articles en cuir.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-cordonnier-bottier",
-    "riasec": ["R", "A"]
-  },
-"38392": {
-    "nom": "CAP ferronnier d'art",
-    "description": "Forme à créer des ouvrages métalliques décoratifs ou fonctionnels.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-ferronnier-d'art",
-    "riasec": ["A", "R"]
-  },
-"38400": {
-    "nom": "CAP fleuriste",
-    "description": "Forme à créer, vendre et entretenir des compositions florales.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-fleuriste",
-    "riasec": ["A", "S"]
-  },
-"37553": {
-    "nom": "CAP cuisine",
-    "description": "Prépare à cuisiner dans des restaurants ou cantines.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-cuisine",
-    "riasec": ["R", "A"]
-  },
-"37554": {
-    "nom": "CAP commercialisation et services en hotel-cafe-restaurant",
-    "description": "Forme à servir les clients dans les cafés, hôtels et restaurants.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-commercialisation-et-services-en-hotel-cafe-restaurant",
-    "riasec": ["S", "E"]
-  },
-"19118": {
-    "nom": "CAP conducteur d'installations de production",
-    "description": "Apprend à faire fonctionner des machines dans une usine.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-conducteur-d-installations-de-production",
-    "riasec": ["R", "C"]
-  },
-"40706": {
-    "nom": "CAP conducteur routier de marchandises",
-    "description": "Forme à conduire des poids lourds pour le transport de marchandises.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-conducteur-routier-de-marchandises",
-    "riasec": ["R", "C"]
-  },
-"37938": {
-    "nom": "CAP employé de vente spécialisé",
-    "description": "Prépare à conseiller et vendre des produits aux clients en magasin.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-employe-de-vente-specialise",
-    "riasec": ["C", "S"]
-  },
-"39327": {
-    "nom": "CAP maintenance des matériels option B : matériels de construction et de manutention",
-    "description": "Apprend à entretenir et réparer les engins de chantier et de manutention.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-maintenance-des-materiels-option-b-materiels-de-construction-et-de-manutention",
-    "riasec": ["R", "I"]
-  },
-"2817": {
-    "nom": "CAP assistant(e) technique en milieux familial et collectif",
-    "description": "Prépare à aider dans les tâches du quotidien (repas, ménage, soins) pour les familles ou collectivités.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-assistant(e)-technique-en-milieux-familial-et-collectif",
-    "riasec": ["S", "C"]
-  },
-"37698": {
-    "nom": "CAP maintenance nautique",
-    "description": "Forme à l'entretien et la réparation de bateaux et équipements nautiques.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-maintenance-nautique",
-    "riasec": ["R", "I"]
-  },
-"37891": {
-    "nom": "CAP serrurier métallier",
-    "description": "Forme à fabriquer et poser des éléments métalliques (portes, grilles…).",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-serrurier-metallier",
-    "riasec": ["R", "I"]
-  },
-"37699": {
-    "nom": "CAP bio-industries de transformation",
-    "description": "Apprend à fabriquer des produits issus de la biologie et de l'agroalimentaire.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-bio-industries-de-transformation",
-    "riasec": ["R", "I"]
-  },
-"42762": {
-    "nom": "CAP métiers du froid et des énergies renouvelables",
-    "description": "Forme à installer et maintenir des systèmes frigorifiques et énergétiques.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-metiers-du-froid-et-des-energies-renouvelables",
-    "riasec": ["R", "I"]
-  },
-"37672": {
-    "nom": "CAP esthétique cosmétique parfumerie",
-    "description": "Apprend à faire des soins du visage, du maquillage et à conseiller des produits.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-esthetique-cosmetique-parfumerie",
-    "riasec": ["A", "S"]
-  },
-"37900": {
-    "nom": "CAP maroquinerie",
-    "description": "Apprend à fabriquer des sacs, ceintures et objets en cuir.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-maroquinerie",
-    "riasec": ["R", "A"]
-  },
-"38741": {
-    "nom": "CAP métiers de l'agriculture",
-    "description": "Prépare aux tâches agricoles (cultures, élevage, utilisation de machines) et à la gestion d'une exploitation.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-metiers-de-l-agriculture",
-    "riasec": ["R", "I"]
-  },
-"40311": {
-    "nom": "CAP maintenance environnementale et propreté des espaces urbains",
-    "description": "Forme à entretenir et nettoyer les espaces publics et urbains.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-maintenance-environnementale-et-proprete-des-espaces-urbains",
-    "riasec": ["R", "C"]
-  },
-"37914": {
-    "nom": "CAP aviation générale",
-    "description": "Prépare aux opérations de maintenance des aéronefs et à la sécurité aéroportuaire.",
-    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-aviation-generale",
-    "riasec": ["R", "I"]
+    "1132": {
+      "nom": "rentrayeur option A : tapis",
+      "description": "Apprend à réparer et restaurer des tapis anciens ou abîmés.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-rentrayeur-option-a-:-tapis",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "1179": {
+      "nom": "employe de vente specialise option b : produits d'equipement courant",
+      "description": "Prépare à vendre des produits comme électroménager ou bricolage.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-employe-de-vente-specialise-option-b-:-produits-d-equipement-courant",
+      "riasec": [
+        "C",
+        "E"
+      ]
+    },
+    "19118": {
+      "nom": "CAP conducteur d'installations de production",
+      "description": "Apprend à faire fonctionner des machines dans une usine.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-conducteur-d-installations-de-production",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "2817": {
+      "nom": "CAP assistant(e) technique en milieux familial et collectif",
+      "description": "Prépare à aider dans les tâches du quotidien (repas, ménage, soins) pour les familles ou collectivités.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-assistant(e)-technique-en-milieux-familial-et-collectif",
+      "riasec": [
+        "S",
+        "C"
+      ]
+    },
+    "31096": {
+      "nom": "services hoteliers",
+      "description": "Forme à accueillir les clients et entretenir les chambres dans les hôtels.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-services-hoteliers",
+      "riasec": [
+        "S",
+        "C"
+      ]
+    },
+    "36336": {
+      "nom": "art et techniques de la bijouterie-joaillerie option polissage-finition",
+      "description": "Apprend à rendre les bijoux brillants et bien finis.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-bijouterie-joaillerie-option-polissage-finition",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "36338": {
+      "nom": "decoration en ceramique",
+      "description": "Apprend à décorer des objets en terre cuite ou porcelaine.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-decoration-en-ceramique",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "36427": {
+      "nom": "CAP staffeur ornemaniste",
+      "description": "Forme à créer et restaurer des éléments décoratifs en plâtre pour bâtiments.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-staffeur-ornemaniste",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "36429": {
+      "nom": "conducteur d'installations de production",
+      "description": "Apprend à faire fonctionner des machines dans une usine.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-conducteur-d-installations-de-production",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "37241": {
+      "nom": "chaussure",
+      "description": "Apprend à fabriquer ou réparer des chaussures.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-chaussure",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "37243": {
+      "nom": "fourrure",
+      "description": "Apprend à travailler la peau et la fourrure pour créer des vêtements ou accessoires.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-fourrure",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "37247": {
+      "nom": "Tapissier d'ameublement en décor",
+      "description": "Réaliser des éléments de décoration intérieure, tels que rideaux, décors de fenêtre et de lit, coussins, tentures murales, draperies.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-tapissier-d'ameublement-en-decor",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "37299": {
+      "nom": "accessoiriste realisateur",
+      "description": "Apprend à fabriquer des objets pour le cinéma, le théâtre ou les spectacles.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-accessoiriste-realisateur",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "37302": {
+      "nom": "arts et techniques du verre option vitrailliste",
+      "description": "Apprend à créer des vitraux pour les bâtiments.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-verre-vitrailliste",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "37305": {
+      "nom": "signaletique et decors graphiques",
+      "description": "Apprend à créer des visuels pour la décoration ou la communication.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-signaletique-et-decors-graphiques",
+      "riasec": [
+        "A",
+        "C"
+      ]
+    },
+    "37366": {
+      "nom": "CAP cordonnier bottier",
+      "description": "Apprend à réparer, fabriquer et entretenir des chaussures et articles en cuir.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-cordonnier-bottier",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "37486": {
+      "nom": "Opérateur en appareillage orthopédique - Spécialité orthoprothèse",
+      "description": "Apprend à fabriquer des prothèses pour aider les personnes à se déplacer ou se soigner.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-operateur-en-appareillage-orthopedique---specialite-orthoprothese",
+      "riasec": [
+        "R",
+        "S"
+      ]
+    },
+    "37487": {
+      "nom": "podo-orthesiste",
+      "description": "Apprend à fabriquer des chaussures et semelles adaptées aux besoins médicaux.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-podo-orthesiste",
+      "riasec": [
+        "R",
+        "S"
+      ]
+    },
+    "37533": {
+      "nom": "CAP crémier-fromager",
+      "description": "Apprend à sélectionner, vendre et conseiller sur les fromages et produits laitiers.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-cremier-fromager",
+      "riasec": [
+        "S",
+        "E"
+      ]
+    },
+    "37538": {
+      "nom": "ebeniste",
+      "description": "Apprend à fabriquer et restaurer des meubles en bois.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-ebeniste",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "37539": {
+      "nom": "arts de la reliure",
+      "description": "Forme à réparer et décorer des livres.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-arts-de-la-reliure",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "37540": {
+      "nom": "Peintre automobile",
+      "description": "Apprend les techniques de préparation, peinture et finition des carrosseries de véhicules.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-peintre-automobile",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "37553": {
+      "nom": "CAP cuisine",
+      "description": "Prépare à cuisiner dans des restaurants ou cantines.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-cuisine",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "37554": {
+      "nom": "CAP commercialisation et services en hotel-cafe-restaurant",
+      "description": "Forme à servir les clients dans les cafés, hôtels et restaurants.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-commercialisation-et-services-en-hotel-cafe-restaurant",
+      "riasec": [
+        "S",
+        "E"
+      ]
+    },
+    "37601": {
+      "nom": "Carrossier automobile",
+      "description": "Prépare à la réparation et à la restauration des carrosseries de véhicules (tôlerie, soudure).",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-carrossier-automobile",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "37669": {
+      "nom": "assistant(e) technique en milieux familial et collectif",
+      "description": "Prépare à aider dans les tâches du quotidien (repas, ménage, soins) pour les familles ou collectivités.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-assistant(e)-technique-en-milieux-familial-et-collectif",
+      "riasec": [
+        "S",
+        "C"
+      ]
+    },
+    "37672": {
+      "nom": "CAP esthétique cosmétique parfumerie",
+      "description": "Apprend à faire des soins du visage, du maquillage et à conseiller des produits.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-esthetique-cosmetique-parfumerie",
+      "riasec": [
+        "A",
+        "S"
+      ]
+    },
+    "37698": {
+      "nom": "CAP maintenance nautique",
+      "description": "Forme à l'entretien et la réparation de bateaux et équipements nautiques.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-maintenance-nautique",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "37699": {
+      "nom": "CAP bio-industries de transformation",
+      "description": "Apprend à fabriquer des produits issus de la biologie et de l'agroalimentaire.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-bio-industries-de-transformation",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "37891": {
+      "nom": "CAP serrurier métallier",
+      "description": "Forme à fabriquer et poser des éléments métalliques (portes, grilles…).",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-serrurier-metallier",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "37893": {
+      "nom": "menuisier aluminium-verre",
+      "description": "Apprend à fabriquer et poser des éléments en alu et verre (portes, fenêtres…).",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-menuisier-aluminium-verre",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "37896": {
+      "nom": "horlogerie",
+      "description": "Apprend à réparer et assembler des montres et horloges.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-horlogerie",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "37900": {
+      "nom": "CAP maroquinerie",
+      "description": "Apprend à fabriquer des sacs, ceintures et objets en cuir.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-maroquinerie",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "37914": {
+      "nom": "CAP aviation générale",
+      "description": "Prépare aux opérations de maintenance des aéronefs et à la sécurité aéroportuaire.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-aviation-generale",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "37938": {
+      "nom": "CAP employé de vente spécialisé",
+      "description": "Prépare à conseiller et vendre des produits aux clients en magasin.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-employe-de-vente-specialise",
+      "riasec": [
+        "C",
+        "S"
+      ]
+    },
+    "38226": {
+      "nom": "agent de securite",
+      "description": "Prépare à surveiller des lieux et assurer la sécurité des personnes.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-agent-de-securite",
+      "riasec": [
+        "R",
+        "E"
+      ]
+    },
+    "38305": {
+      "nom": "monteur en installations sanitaires",
+      "description": "Forme à poser les équipements de plomberie dans les bâtiments.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-monteur-en-installations-sanitaires",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "38306": {
+      "nom": "monteur en installations thermiques",
+      "description": "Apprend à installer des systèmes de chauffage.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-monteur-en-installations-thermiques",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "38310": {
+      "nom": "tailleur de pierre",
+      "description": "Forme à tailler et poser des pierres pour les bâtiments ou monuments.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-tailleur-de-pierre",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "38386": {
+      "nom": "jardinier paysagiste",
+      "description": "Apprend à créer et entretenir des espaces verts (jardins, parcs) et à utiliser des outils paysagers.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-jardinier-paysagiste",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "38392": {
+      "nom": "CAP ferronnier d'art",
+      "description": "Forme à créer des ouvrages métalliques décoratifs ou fonctionnels.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-ferronnier-d'art",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "38400": {
+      "nom": "CAP fleuriste",
+      "description": "Forme à créer, vendre et entretenir des compositions florales.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-fleuriste",
+      "riasec": [
+        "A",
+        "S"
+      ]
+    },
+    "38401": {
+      "nom": "Électricien",
+      "description": "Forme à installer et réparer des équipements électriques.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-electricien",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "38403": {
+      "nom": "operateur/operatrice de service-relation client et livraison",
+      "description": "Forme à livrer des produits et à bien communiquer avec les clients.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-operateur/operatrice-de-service---relation-client-et-livraison",
+      "riasec": [
+        "S",
+        "C"
+      ]
+    },
+    "38411": {
+      "nom": "serigraphie industrielle",
+      "description": "Apprend à imprimer des images ou textes sur différents supports (textile, métal…).",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-serigraphie-industrielle",
+      "riasec": [
+        "A",
+        "C"
+      ]
+    },
+    "38424": {
+      "nom": "commercialisation et services en hotel-cafe-restaurant",
+      "description": "Forme à servir les clients dans les cafés, hôtels et restaurants.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-commercialisation-et-services-en-hotel-cafe-restaurant",
+      "riasec": [
+        "S",
+        "E"
+      ]
+    },
+    "38429": {
+      "nom": "Commercialisation et services en restauration",
+      "description": "Prépare à servir les clients dans les restaurants.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-restaurant",
+      "riasec": [
+        "S",
+        "R"
+      ]
+    },
+    "38430": {
+      "nom": "cuisine",
+      "description": "Prépare à cuisiner dans des restaurants ou cantines.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-cuisine",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "38560": {
+      "nom": "CAP installateur en froid et conditionnement d'air",
+      "description": "Apprend à installer, régler et entretenir des systèmes frigorifiques et climatiques.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-installateur-en-froid-et-conditionnement-d'air",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "38565": {
+      "nom": "petite enfance",
+      "description": "Prépare à s’occuper de jeunes enfants dans les crèches ou écoles.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-petite-enfance",
+      "riasec": [
+        "S",
+        "R"
+      ]
+    },
+    "38568": {
+      "nom": "Réalisations industrielles en chaudronnerie ou soudage, option A : chaudronnerie, option B : soudage",
+      "description": "Apprend à assembler des pièces métalliques pour des machines ou structures.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-realisations-industrielles-en-chaudronnerie-ou-soudage,-option-a-:-chaudronnerie,-option-b-:-soudage",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "38632": {
+      "nom": "Chocolaterie-confiserie",
+      "description": "Apprend les techniques de fabrication artisanale de chocolats, confiseries et produits sucrés.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-chocolaterie-confiserie",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "38712": {
+      "nom": "maroquinerie",
+      "description": "Apprend à fabriquer des sacs, ceintures et objets en cuir.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-maroquinerie",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "38741": {
+      "nom": "CAP métiers de l'agriculture",
+      "description": "Prépare aux tâches agricoles (cultures, élevage, utilisation de machines) et à la gestion d'une exploitation.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-metiers-de-l-agriculture",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "38765": {
+      "nom": "patissier",
+      "description": "Apprend à faire des gâteaux, tartes et desserts.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-patissier",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "39030": {
+      "nom": "esthetique cosmetique parfumerie",
+      "description": "Apprend à faire des soins du visage, du maquillage et à conseiller des produits.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-esthetique-cosmetique-parfumerie",
+      "riasec": [
+        "A",
+        "S"
+      ]
+    },
+    "39036": {
+      "nom": "peintre-applicateur de revetement",
+      "description": "(identique au précédent, formulation alternative)",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-peintre-applicateur-de-revetement",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "39266": {
+      "nom": "metiers de la coiffure",
+      "description": "Apprend à couper, coiffer et conseiller les clients.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-metiers-de-la-coiffure",
+      "riasec": [
+        "S",
+        "A"
+      ]
+    },
+    "39327": {
+      "nom": "CAP maintenance des matériels option B : matériels de construction et de manutention",
+      "description": "Apprend à entretenir et réparer les engins de chantier et de manutention.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-maintenance-des-materiels-option-b-materiels-de-construction-et-de-manutention",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "39328": {
+      "nom": "carreleur mosaiste",
+      "description": "Forme à poser du carrelage et créer des décors en mosaïque.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-carreleur-mosaiste",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "39330": {
+      "nom": "CAP maintenance des matériels option B : matériels de construction et de manutention",
+      "description": "Apprend à entretenir et réparer les engins de chantier et de manutention.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-maintenance-des-materiels-option-b-:-materiels-de-construction-et-de-manutention",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "39647": {
+      "nom": "CAP modèles et moules céramiques",
+      "description": "Forme à fabriquer des moules et prototypes pour l’industrie céramique.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-modeles-et-moules-ceramiques",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "39699": {
+      "nom": "industries chimiques",
+      "description": "Apprend à travailler dans des usines de produits chimiques.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-industries-chimiques",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "39703": {
+      "nom": "metiers de l'enseigne et de la signaletique",
+      "description": "Apprend à fabriquer des panneaux et enseignes pour les commerces.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-metiers-de-l-enseigne-et-de-la-signaletique",
+      "riasec": [
+        "A",
+        "C"
+      ]
+    },
+    "39940": {
+      "nom": "souffleur de verre option verrerie scientifique",
+      "description": "Apprend à fabriquer des objets en verre pour la science ou l’industrie.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-souffleur-de-verre-option-verrerie-scientifique",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "40309": {
+      "nom": "agent de proprete et d'hygiene",
+      "description": "Apprend à nettoyer et désinfecter des lieux publics ou privés.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-agent-de-proprete-et-d-hygiene",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "40311": {
+      "nom": "CAP maintenance environnementale et propreté des espaces urbains",
+      "description": "Forme à entretenir et nettoyer les espaces publics et urbains.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-maintenance-environnementale-et-proprete-des-espaces-urbains",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "40484": {
+      "nom": "CAP constructeur de réseaux de canalisations de travaux publics",
+      "description": "Apprend à installer et entretenir les réseaux d’eau, gaz et assainissement.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-constructeur-de-reseaux-de-canalisations-de-travaux-publics",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "40485": {
+      "nom": "CAP constructeur de routes et d'aménagements urbains",
+      "description": "Forme à réaliser des chaussées, trottoirs et ouvrages de voirie.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-constructeur-de-routes-et-d'amenagements-urbains",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "40523": {
+      "nom": "metiers de l'agriculture",
+      "description": "Prépare aux tâches agricoles (cultures, élevage, utilisation de machines) et à la gestion d'une exploitation.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-metiers-de-l'agriculture",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "40706": {
+      "nom": "CAP conducteur routier de marchandises",
+      "description": "Forme à conduire des poids lourds pour le transport de marchandises.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-conducteur-routier-de-marchandises",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "40994": {
+      "nom": "equipier polyvalent du commerce",
+      "description": "Forme à travailler dans différents rayons d’un magasin.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-equipier-polyvalent-du-commerce",
+      "riasec": [
+        "C",
+        "S"
+      ]
+    },
+    "40997": {
+      "nom": "Maintenance des véhicules option véhicules légers",
+      "description": "Apprend à faire l’entretien courant des voitures.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-maintenance-des-vehicules-option-vehicules-legers",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "41012": {
+      "nom": "CAP charpentier bois",
+      "description": "Apprend à fabriquer et poser des structures en bois pour bâtiments et ouvrages.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-charpentier-bois",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "41830": {
+      "nom": "CAP maçon",
+      "description": "Forme à construire des murs, dalles, fondations et ouvrages en béton ou en pierre.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-macon",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "41831": {
+      "nom": "metallier",
+      "description": "Apprend à travailler le métal pour fabriquer des structures ou des éléments décoratifs.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-metallier",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "41833": {
+      "nom": "intervention en maintenance technique des batiments",
+      "description": "Forme à réparer et entretenir les équipements d’un bâtiment.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-intervention-en-maintenance-technique-des-batiments",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "41834": {
+      "nom": "couvreur",
+      "description": "Apprend à poser et réparer les toits des bâtiments.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-couvreur",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "41835": {
+      "nom": "menuisier fabricant de menuiserie, mobilier et agencement",
+      "description": "Apprend à créer des meubles et à aménager des espaces intérieurs.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-menuisier-fabricant-de-menuiserie,-mobilier-et-agencement",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "41836": {
+      "nom": "menuisier installateur",
+      "description": "Prépare à poser des éléments en bois sur les chantiers.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-menuisier-installateur",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "42105": {
+      "nom": "arts de la broderie",
+      "description": "Apprend à décorer des tissus avec des fils et motifs.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-arts-de-la-broderie",
+      "riasec": [
+        "A",
+        "C"
+      ]
+    },
+    "42106": {
+      "nom": "outillages en outils a decouper et a emboutir",
+      "description": "Forme à fabriquer des outils pour découper ou former des pièces métalliques.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-outillages-en-outils-a-decouper-et-a-emboutir",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "42113": {
+      "nom": "Arts du tapis et de la tapisserie de lisse",
+      "description": "Apprend à tisser des tapis et des tentures décoratives.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-arts-du-tapis-et-de-la-tapisserie-de-lisse",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "42115": {
+      "nom": "boulanger",
+      "description": "Apprend à faire du pain, des viennoiseries et à gérer un fournil.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-boulanger",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "42120": {
+      "nom": "production et service en restauration (rapide, collective, cafeteria)",
+      "description": "Prépare à travailler dans les cantines, fast-foods ou cafétérias.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-production-et-service-en-restauration-(rapide,-collective,-cafeteria)",
+      "riasec": [
+        "R",
+        "S"
+      ]
+    },
+    "42122": {
+      "nom": "cordonnerie multiservice",
+      "description": "Forme à réparer chaussures, clés, montres et autres objets du quotidien.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-cordonnerie-multiservice",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "42123": {
+      "nom": "metiers de la mode : chapelier-modiste",
+      "description": "Forme à fabriquer des chapeaux et accessoires de mode.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-metiers-de-la-mode-:-chapelier-modiste",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "42124": {
+      "nom": "metiers de la mode-vêtement flou",
+      "description": "Apprend à coudre des vêtements souples comme des robes ou blouses.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-metiers-de-la-mode---vetement-flou",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "42125": {
+      "nom": "metiers de la mode-vêtement tailleur",
+      "description": "Forme à réaliser des vêtements structurés comme des vestes ou pantalons.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-metiers-de-la-mode---vetement-tailleur",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "42126": {
+      "nom": "vetement de peau",
+      "description": "Apprend à fabriquer des vêtements en cuir ou peau.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-vetement-de-peau",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "42127": {
+      "nom": "Métiers de l’entretien des textiles, option A : blanchisserie, option B : pressing",
+      "description": "Forme à nettoyer et entretenir les vêtements dans un commerce spécialisé.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-metiers-de-l’entretien-des-textiles,-option-a-:-blanchisserie,-option-b-:-pressing",
+      "riasec": [
+        "C",
+        "R"
+      ]
+    },
+    "42128": {
+      "nom": "metiers de l'entretien des textiles, option b : pressing",
+      "description": "Forme à nettoyer et traiter les vêtements dans un commerce spécialisé.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-metiers-de-l-entretien-des-textiles,-option-b-:-pressing",
+      "riasec": [
+        "C",
+        "R"
+      ]
+    },
+    "42133": {
+      "nom": "Rentrayeur option A tapis, option B tapisserie",
+      "description": "Confectionner des tapis et des tapisseries de lisse à partir d'un carton ou d'une maquette. ",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-rentrayeur-option-a-tapis,-option-b-tapisserie",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "42134": {
+      "nom": "bronzier option A : monteur en bronze",
+      "description": "Apprend à assembler des pièces en bronze pour objets décoratifs ou techniques.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-bronzier-option-a-:-monteur-en-bronze",
+      "riasec": [
+        "R",
+        "A"
+      ]
+    },
+    "42586": {
+      "nom": "operateur/operatrice logistique",
+      "description": "Apprend à organiser les stocks et les livraisons dans un entrepôt.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-operateur/operatrice-logistique",
+      "riasec": [
+        "C",
+        "R"
+      ]
+    },
+    "42762": {
+      "nom": "CAP métiers du froid et des énergies renouvelables",
+      "description": "Forme à installer et maintenir des systèmes frigorifiques et énergétiques.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-metiers-du-froid-et-des-energies-renouvelables",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "42799": {
+      "nom": "agent de la qualite de l'eau",
+      "description": "Forme à surveiller et traiter l’eau pour qu’elle soit propre.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-agent-de-la-qualite-de-l-eau",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "4636": {
+      "nom": "employe de vente specialise option D : librairie-papeterie-presse",
+      "description": "Apprend à vendre des livres, des fournitures et à conseiller les clients.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-employe-de-vente-specialise-option-d-:-librairie-papeterie-presse",
+      "riasec": [
+        "C",
+        "S"
+      ]
+    },
+    "505": {
+      "nom": "signaletique, enseigne et decor",
+      "description": "Forme à fabriquer des enseignes et éléments visuels pour les commerces.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-signaletique,-enseigne-et-decor",
+      "riasec": [
+        "A",
+        "C"
+      ]
+    },
+    "5364": {
+      "nom": "coiffure",
+      "description": "Prépare à couper, coiffer et conseiller les clients.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-coiffure",
+      "riasec": [
+        "S",
+        "A"
+      ]
+    },
+    "561": {
+      "nom": "vendeur-magasinier en pieces de rechange et equipements automobiles",
+      "description": "Apprend à vendre et gérer les pièces détachées pour les véhicules.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-vendeur-magasinier-en-pieces-de-rechange-et-equipements-automobiles",
+      "riasec": [
+        "C",
+        "R"
+      ]
+    },
+    "570": {
+      "nom": "employe technique de laboratoire",
+      "description": "Forme à réaliser des analyses et tests en laboratoire (chimie, biologie, contrôle qualité).",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-employe-technique-de-laboratoire",
+      "riasec": [
+        "I",
+        "C"
+      ]
+    },
+    "601": {
+      "nom": "maintenance de batiments de collectivites",
+      "description": "Forme à entretenir les locaux publics (écoles, hôpitaux…).",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-maintenance-de-batiments-de-collectivites",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "684": {
+      "nom": "employe de commerce multi-specialites",
+      "description": "Apprend à gérer les rayons, les stocks et à conseiller les clients.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-employe-de-commerce-multi-specialites",
+      "riasec": [
+        "C",
+        "S"
+      ]
+    },
+    "7140": {
+      "nom": "realisation en chaudronnerie industrielle",
+      "description": "Forme à fabriquer des pièces métalliques pour l’industrie.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-realisation-en-chaudronnerie-industrielle",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "715": {
+      "nom": "rentrayeur option B : tapisserie",
+      "description": "Forme à restaurer des tapisseries décoratives.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-rentrayeur-option-b-:-tapisserie",
+      "riasec": [
+        "A",
+        "R"
+      ]
+    },
+    "7366": {
+      "nom": "realisations industrielles en chaudronnerie ou soudage option a chaudronnerie",
+      "description": "Apprend à assembler des pièces métalliques pour des machines ou structures.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-realisations-industrielles-en-chaudronnerie-ou-soudage-option-a-:-chaudronnerie",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    },
+    "794": {
+      "nom": "agent polyvalent de restauration",
+      "description": "Apprend à aider en cuisine et en salle dans les cantines ou restaurants.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-agent-polyvalent-de-restauration",
+      "riasec": [
+        "R",
+        "C"
+      ]
+    },
+    "834": {
+      "nom": "employe de vente specialise option c : service a la clientele",
+      "description": "Forme à accueillir et aider les clients dans leurs achats.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-employe-de-vente-specialise-option-c-:-service-a-la-clientele",
+      "riasec": [
+        "S",
+        "C"
+      ]
+    },
+    "849": {
+      "nom": "services en brasserie-cafe",
+      "description": "Prépare à travailler dans les cafés et brasseries, en salle ou au comptoir.",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-services-en-brasserie-cafe",
+      "riasec": [
+        "S",
+        "R"
+      ]
+    },
+    "872": {
+      "nom": "serrurier metallier",
+      "description": "Forme à fabriquer et poser des éléments métalliques (portes, grilles…).",
+      "lien": "https://www.onisep.fr/ressources/univers-formation/formations/lycees/cap-serrurier-metallier",
+      "riasec": [
+        "R",
+        "I"
+      ]
+    }
   }
-  }
-}
 }
