@@ -220,6 +220,13 @@
       margin-bottom: 12px;
       background: #fff;
       position: relative;
+      cursor: pointer;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .lycee-card.selected {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.35), var(--shadow);
     }
 
     .lycee-card h3 {
@@ -561,10 +568,7 @@
     // État global de l'application
     const state = {
       lycees: [],
-      onisepLinks: {},   // links depuis formations.json
-      descriptions: {},  // descriptions depuis formations.json
-      riasec: {},         // riasec depuis formations.json
-      noms: {}            // noms depuis formations.json
+      formations: {}   // formations.json : { TYPE: { CODE: { nom, description, lien, riasec } } }
     };
 
     // Initialisation de la carte Leaflet
@@ -573,6 +577,7 @@
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
     const markersLayer = L.layerGroup().addTo(map);
+    const markersByLyceeId = new Map(); // marqueurs Leaflet indexés par id de lycée
 
     // Fonction pour récupérer les valeurs sélectionnées dans un <select multiple>
     function getSelectedValues(selectId) {
@@ -643,7 +648,7 @@
       return type;
     }
 
-    // Charge les données de formations (liens, descriptions, riasec, noms)
+    // Charge les données des formations (structure par formation)
     async function loadOnisepData() {
       const candidates = ['./formations.json', '/formations.json', 'formations.json'];
       let lastError = null;
@@ -653,10 +658,7 @@
           const response = await fetch(url, { cache: 'no-store' });
           if (!response.ok) throw new Error(`HTTP ${response.status}`);
           const data = await response.json();
-          state.onisepLinks = data.links || {};
-          state.descriptions = data.descriptions || {};
-          state.riasec = data.riasec || {};
-          state.noms = data.noms || {};
+          state.formations = data || {};
           return;
         } catch (error) {
           lastError = error;
@@ -664,10 +666,7 @@
       }
 
       console.warn('Chargement de formations.json impossible.', lastError);
-      state.onisepLinks = { EDS: {}, techno: {}, pro: {}, CAP: {} };
-      state.descriptions = { EDS: {}, techno: {}, pro: {}, CAP: {} };
-      state.riasec = { EDS: {}, techno: {}, pro: {}, CAP: {} };
-      state.noms = { EDS: {}, techno: {}, pro: {}, CAP: {} };
+      state.formations = { EDS: {}, techno: {}, pro: {}, CAP: {} };
     }
 
     // Charge les données des lycées
@@ -697,50 +696,34 @@
       applyFilters();
     }
 
-    // Récupère le nom d'une formation
-    function getFormationNom(formation) {
+    // Récupère les informations complètes d'une formation
+    function getFormationInfo(formation) {
       const type = normalizeType(formation.type);
       const id = formation.id || formation.nom;
-      const entry = state.noms[type]?.[id];
-      if (typeof entry === 'string') return entry;
-      if (entry && entry.nom) return entry.nom;
-      return id;
+      return state.formations[type]?.[id] || null;
+    }
+
+    // Récupère le nom d'une formation
+    function getFormationNom(formation) {
+      return getFormationInfo(formation)?.nom || formation.id || formation.nom;
     }
 
     // Récupère la description d'une formation
     function getFormationDescription(formation) {
-      const type = normalizeType(formation.type);
-      const id = formation.id || formation.nom;
-      const desc = state.descriptions[type]?.[id];
-      if (desc) return desc;
-      const nomEntry = state.noms[type]?.[id];
-      if (nomEntry && typeof nomEntry === 'object' && nomEntry.description) return nomEntry.description;
-      return "Description non disponible.";
+      return getFormationInfo(formation)?.description || "Description non disponible.";
     }
 
     // Récupère le RIASEC d'une formation
     function getFormationRiasec(formation) {
-      const type = normalizeType(formation.type);
-      const id = formation.id || formation.nom;
-      const riasec = state.riasec[type]?.[id];
-      if (riasec) return riasec;
-      const nomEntry = state.noms[type]?.[id];
-      if (nomEntry && typeof nomEntry === 'object' && nomEntry.riasec) return nomEntry.riasec;
-      return [];
+      return getFormationInfo(formation)?.riasec || [];
     }
 
     // Récupère le lien ONISEP d'une formation
     function getOnisepLink(formation) {
-      const type = normalizeType(formation.type);
-      const id = formation.id || formation.nom;
+      const info = getFormationInfo(formation);
+      if (info?.lien) return info.lien;
 
-      const link = state.onisepLinks[type]?.[id];
-      if (link) return link;
-
-      const nomEntry = state.noms[type]?.[id];
-      if (nomEntry && typeof nomEntry === 'object' && nomEntry.lien) return nomEntry.lien;
-
-      if (type === "EDS") return ONISEP_EDS_LINK;
+      if (normalizeType(formation.type) === "EDS") return ONISEP_EDS_LINK;
 
       return null;
     }
@@ -802,37 +785,53 @@
     }
 
     // Affiche les marqueurs sur la carte
-    function renderMarkers(lycees) {
+    function renderMarkers(lycees, filters = {}) {
       markersLayer.clearLayers();
+      markersByLyceeId.clear();
+
+      const hasFormationFilters = (filters.types && filters.types.length > 0) || (filters.riasec && filters.riasec.length > 0) || !!filters.search;
 
       lycees.forEach(lycee => {
         if (!lycee.latitude || !lycee.longitude) return;
 
         const marker = L.marker([lycee.latitude, lycee.longitude]);
-        const formationsList = (lycee.formations || [])
-          .map(f => {
-            const type = f.type;
-            const id = f.id || f.nom;
-            const nom = getFormationNom(f);
-            const riasecArr = getFormationRiasec(f);
-            const riasec = riasecArr.length > 0 ? ` ${renderRiasecIcons(riasecArr)}` : '';
-            const description = getFormationDescription(f);
-            const link = getOnisepLink(f);
-            const linkHtml = link ? `<a href="${link}" target="_blank" rel="noopener noreferrer" class="onisep-link" title="${description}">En savoir plus</a>` : '';
-            return `- ${renderFormationName(nom, type)}${riasec} ${linkHtml}`;
-          })
-          .join('<br>');
+        markersByLyceeId.set(lycee.id, marker);
+
+        const allFormations = lycee.formations || [];
+        const matchingFormations = hasFormationFilters
+          ? allFormations.filter(f => matchesFormation(f, filters))
+          : allFormations;
+        const otherFormations = allFormations.filter(f => !matchingFormations.includes(f));
+
+        const matchingHtml = matchingFormations.map(renderFormationItem).join('');
+        const otherHtml = otherFormations.map(renderFormationItem).join('');
+        const showToggle = otherFormations.length > 0;
+        const extraId = `map-extra-${lycee.id.replace(/[^a-zA-Z0-9]/g, '')}`;
 
         marker.bindPopup(`
-          <b>${lycee.nom}</b><br>
-          ${lycee.adresse}<br>
-          ${lycee.email}<br>
-          ${lycee.telephone || 'Non renseigné'}<br>
-          Internat : ${lycee.internat === 1 ? 'Oui' : 'Non'}<br><br>
-          <b>Formations :</b><br>
-          ${formationsList || 'Aucune formation'}
+          <div onclick="event.stopPropagation()">
+            <b>${lycee.nom}</b>
+            <details class="lycee-details">
+              <summary>Voir le détail du lycée</summary>
+              <div class="lycee-details-content">
+                <p><strong>UAI :</strong> ${lycee.id}</p>
+                <p><strong>Adresse :</strong> ${lycee.adresse}</p>
+                <p><strong>Email :</strong> ${lycee.email}</p>
+                <p><strong>Téléphone :</strong> ${lycee.telephone || 'Non renseigné'}</p>
+                <p><strong>Académie :</strong> ${lycee.academie} ${lycee.departement ? `(${lycee.departement})` : ''}</p>
+                <p><strong>Internat :</strong> ${lycee.internat === 1 ? 'Oui' : 'Non'}</p>
+              </div>
+            </details>
+            <p><strong>Formations${hasFormationFilters ? ` (${matchingFormations.length}/${allFormations.length})` : ''} :</strong></p>
+            <ul>${matchingHtml || '<li>Aucune formation correspondante</li>'}</ul>
+            ${showToggle ? `
+              <button class="formation-toggle" type="button" onclick="(function(btn){var extra=document.getElementById('${extraId}');var hidden=extra.classList.contains('hidden');extra.classList.toggle('hidden');btn.textContent=hidden?'Masquer les autres formations':'Voir toutes les formations (${otherFormations.length})';})(this)">Voir toutes les formations (${otherFormations.length})</button>
+              <ul id="${extraId}" class="hidden">${otherHtml}</ul>
+            ` : ''}
+          </div>
         `);
 
+        marker.on('click', () => selectLycee(lycee.id, { scrollList: true }));
         marker.addTo(markersLayer);
       });
     }
@@ -883,7 +882,7 @@
         const extraId = `extra-${lycee.id.replace(/[^a-zA-Z0-9]/g, '')}`;
 
         return `
-          <div class="lycee-card">
+          <div class="lycee-card" id="${getLyceeCardDomId(lycee.id)}" data-lycee-id="${lycee.id}">
             <h3>${lycee.nom}</h3>
             <details class="lycee-details">
               <summary>Voir le détail du lycée</summary>
@@ -1039,7 +1038,7 @@
       };
 
       const filteredLycees = state.lycees.filter(lycee => matchesFilters(lycee, filters));
-      renderMarkers(filteredLycees);
+      renderMarkers(filteredLycees, filters);
       renderResults(filteredLycees, filters);
       updateResultCounter(filteredLycees, filters); // NOUVEAU : Met à jour le compteur et les filtres
     }
@@ -1081,6 +1080,43 @@
 
       setTimeout(() => map.invalidateSize(), 100);
     }
+
+    // Identifiant DOM d'une carte de lycée
+    function getLyceeCardDomId(lyceeId) {
+      return `lycee-card-${String(lyceeId || '').replace(/[^a-zA-Z0-9]/g, '')}`;
+    }
+
+    // Sélectionne un lycée et synchronise la carte et la liste
+    function selectLycee(lyceeId, options = {}) {
+      const { scrollList = false, showOnMap = false } = options;
+
+      document.querySelectorAll('.lycee-card.selected').forEach(card => card.classList.remove('selected'));
+
+      const card = document.getElementById(getLyceeCardDomId(lyceeId));
+      if (card) {
+        card.classList.add('selected');
+        if (scrollList) {
+          const resultsEl = document.getElementById('results');
+          resultsEl.scrollTop = card.offsetTop - resultsEl.clientHeight / 2 + card.offsetHeight / 2;
+        }
+      }
+
+      if (showOnMap) {
+        const marker = markersByLyceeId.get(lyceeId);
+        if (marker) {
+          map.panTo(marker.getLatLng());
+          marker.openPopup();
+        }
+      }
+    }
+
+    // Clic sur une carte de la liste -> sélection et affichage sur la carte
+    document.getElementById('results').addEventListener('click', event => {
+      if (event.target.closest('a')) return; // laisser passer les liens ONISEP
+      const card = event.target.closest('.lycee-card');
+      if (!card || !card.dataset.lyceeId) return;
+      selectLycee(card.dataset.lyceeId, { showOnMap: true });
+    });
 
     // Initialisation des écouteurs d'événements
     document.getElementById('applyBtn').addEventListener('click', applyFilters);
