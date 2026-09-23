@@ -401,6 +401,73 @@
       margin-top: 4px;
     }
 
+    /* Panneau des formations correspondantes */
+    .formations-panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      margin: 16px 0 0;
+      padding: 16px 20px;
+    }
+
+    .formations-panel-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .formations-panel-header label {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .formations-search {
+      flex: 1;
+      min-width: 220px;
+      max-width: 360px;
+      width: auto;
+    }
+
+    .formations-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      max-height: 170px;
+      overflow-y: auto;
+      padding: 4px;
+    }
+
+    .formation-chip {
+      border: 2px solid;
+      border-radius: 16px;
+      background: #fff;
+      color: var(--text);
+      padding: 5px 12px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      min-width: auto;
+      transition: box-shadow 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+    }
+
+    .formation-chip:hover {
+      box-shadow: var(--shadow);
+      background: #f1f5f9;
+    }
+
+    .formation-chip.eds { border-color: #213d6d; color: #213d6d; }
+    .formation-chip.techno { border-color: #d90000; color: #d90000; }
+    .formation-chip.pro { border-color: #008000; color: #008000; }
+    .formation-chip.cap { border-color: #43b843; color: #2d7d2d; }
+
+    .formation-chip.eds.selected { background: #213d6d; color: #fff; }
+    .formation-chip.techno.selected { background: #d90000; color: #fff; }
+    .formation-chip.pro.selected { background: #008000; color: #fff; }
+    .formation-chip.cap.selected { background: #43b843; color: #fff; }
+
     @media (max-width: 980px) {
       .container {
         flex-direction: column;
@@ -460,11 +527,6 @@
       </div>
 
       <div class="field">
-        <label for="nomFormation">Nom / code de la formation</label>
-        <input id="nomFormation" type="text" placeholder="Ex: STI2D, NSI, Math, Arts" />
-      </div>
-
-      <div class="field">
         <label for="academies">Académie</label>
         <select id="academies" multiple>
           <option value="Paris">Paris</option>
@@ -497,8 +559,15 @@
       </div>
     </div>
 
+    <div class="formations-panel">
+      <div class="formations-panel-header">
+        <label for="formationsSearch">Formations correspondantes (<span id="formationsCount">0</span>)</label>
+        <input id="formationsSearch" class="formations-search" type="text" placeholder="&#128269; Rechercher une formation..." />
+      </div>
+      <div id="formationsList" class="formations-list"></div>
+    </div>
+
     <div class="button-row">
-      <button id="applyBtn" type="button">Appliquer les filtres</button>
       <button id="resetBtn" type="button" class="secondary">Réinitialiser</button>
       <!-- NOUVEAU : Compteur de résultats avec détail des filtres -->
       <div id="resultCounter" class="result-counter hidden">
@@ -568,7 +637,9 @@
     // État global de l'application
     const state = {
       lycees: [],
-      formations: {}   // formations.json : { TYPE: { CODE: { nom, description, lien, riasec } } }
+      formations: {},   // formations.json : { TYPE: { CODE: { nom, description, lien, riasec } } }
+      selectedFormations: new Set(), // formations sélectionnées dans le panneau (clé : type|id)
+      chipsCache: []    // formations correspondantes affichées dans le panneau
     };
 
     // Initialisation de la carte Leaflet
@@ -705,7 +776,7 @@
 
     // Récupère le nom d'une formation
     function getFormationNom(formation) {
-      return getFormationInfo(formation)?.nom || formation.id || formation.nom;
+      return getFormationInfo(formation)?.nom || formation.id || formation.nom || '—';
     }
 
     // Récupère la description d'une formation
@@ -774,6 +845,11 @@
 
       if (filters.internat !== '' && String(lycee.internat) !== String(filters.internat)) {
         return false;
+      }
+
+      if (filters.selectedFormations && filters.selectedFormations.size > 0) {
+        const hasSelectedFormation = (lycee.formations || []).some(f => filters.selectedFormations.has(`${f.type}|${f.id}`));
+        if (!hasSelectedFormation) return false;
       }
 
       if (filters.types.length > 0 || filters.riasec.length > 0 || filters.search) {
@@ -934,6 +1010,14 @@
         filterParts.push(`Type=${typeText}`);
       }
 
+      if (filters.selectedFormations && filters.selectedFormations.size > 0) {
+        const formationNames = [...filters.selectedFormations].map(key => {
+          const chip = (state.chipsCache || []).find(f => f.key === key);
+          return chip ? chip.nom : key.split('|')[1];
+        });
+        filterParts.push(`Formation(s)=${formationNames.join(', ')}`);
+      }
+
       if (filters.academies.length > 0) {
         filterParts.push(`Académie=${filters.academies.join(', ')}`);
       }
@@ -1032,26 +1116,49 @@
         types: getSelectedValues('typeFormation'),
         academies: getSelectedValues('academies'),
         departements: getSelectedValues('departements'),
-        search: normalize(document.getElementById('nomFormation').value),
+        search: '', // la recherche par nom a été remplacée par la recherche interne du panneau
         internat: document.getElementById('internat').value,
-        statuts: getSelectedValues('statut')
+        statuts: getSelectedValues('statut'),
+        selectedFormations: state.selectedFormations
       };
+
+      // Panneau des formations correspondantes (la sélection est ignorée
+      // pour calculer les puces, afin que la liste ne se restreigne pas elle-même)
+      const previousChips = state.chipsCache;
+      const chipFilters = { ...filters, selectedFormations: new Set() };
+      const chipSourceLycees = state.lycees.filter(lycee => matchesFilters(lycee, chipFilters));
+      state.chipsCache = collectMatchingFormations(chipSourceLycees, filters);
+
+      // Conserve les formations sélectionnées même si elles sortent des nouveaux filtres
+      const knownKeys = new Set(state.chipsCache.map(f => f.key));
+      for (const key of [...state.selectedFormations]) {
+        if (knownKeys.has(key)) continue;
+        const previous = previousChips.find(f => f.key === key);
+        if (previous) {
+          state.chipsCache.push(previous);
+        } else {
+          state.selectedFormations.delete(key);
+        }
+      }
+      state.chipsCache.sort((a, b) => String(a.nom || '').localeCompare(String(b.nom || ''), 'fr'));
+      renderFormationsPanel();
 
       const filteredLycees = state.lycees.filter(lycee => matchesFilters(lycee, filters));
       renderMarkers(filteredLycees, filters);
       renderResults(filteredLycees, filters);
-      updateResultCounter(filteredLycees, filters); // NOUVEAU : Met à jour le compteur et les filtres
+      updateResultCounter(filteredLycees, filters);
     }
 
     // Réinitialise les filtres
     function resetFilters() {
       document.getElementById('riasec').selectedIndex = -1;
       document.getElementById('typeFormation').selectedIndex = -1;
-      document.getElementById('nomFormation').value = '';
       document.getElementById('academies').selectedIndex = -1;
       document.getElementById('departements').selectedIndex = -1;
       document.getElementById('internat').value = '';
       document.getElementById('statut').selectedIndex = -1;
+      state.selectedFormations.clear();
+      document.getElementById('formationsSearch').value = '';
       toggleDepartments();
       applyFilters();
     }
@@ -1118,10 +1225,86 @@
       selectLycee(card.dataset.lyceeId, { showOnMap: true });
     });
 
+    // Collecte les formations distinctes correspondant aux filtres
+    function collectMatchingFormations(lycees, filters) {
+      const map = new Map();
+
+      lycees.forEach(lycee => {
+        (lycee.formations || []).forEach(f => {
+          if (!matchesFormation(f, filters)) return;
+          if (!f.id) return; // ignore les formations sans code
+          const key = `${f.type}|${f.id}`;
+          if (!map.has(key)) {
+            map.set(key, {
+              key,
+              type: f.type,
+              id: f.id,
+              nom: getFormationNom(f)
+            });
+          }
+        });
+      });
+
+      return [...map.values()].sort((a, b) => String(a.nom || '').localeCompare(String(b.nom || ''), 'fr'));
+    }
+
+    // Affiche le panneau des formations correspondantes (puces cliquables)
+    function renderFormationsPanel() {
+      const listEl = document.getElementById('formationsList');
+      const countEl = document.getElementById('formationsCount');
+      const query = normalize(document.getElementById('formationsSearch').value);
+      const formations = state.chipsCache;
+      const visible = query
+        ? formations.filter(f => normalize(f.nom).includes(query) || normalize(f.id).includes(query))
+        : formations;
+
+      countEl.textContent = query ? `${visible.length}/${formations.length}` : String(formations.length);
+
+      if (visible.length === 0) {
+        listEl.innerHTML = '<span class="empty-state">Aucune formation correspondante.</span>';
+        return;
+      }
+
+      const typeLabels = {
+        EDS: 'Bac général / spécialités',
+        techno: 'Bac technologique',
+        pro: 'Bac professionnel',
+        cap: 'CAP',
+        CAP: 'CAP'
+      };
+
+      listEl.innerHTML = visible.map(f => {
+        const typeClass = f.type === 'CAP' ? 'cap' : String(f.type).toLowerCase();
+        const selected = state.selectedFormations.has(f.key);
+        return `<button type="button" class="formation-chip ${typeClass}${selected ? ' selected' : ''}" data-key="${f.key}" title="${typeLabels[f.type] || f.type} : ${f.nom}">${f.nom}</button>`;
+      }).join('');
+    }
+
+    // Clic sur une formation : active/désactive le filtre formation
+    document.getElementById('formationsList').addEventListener('click', event => {
+      const chip = event.target.closest('.formation-chip');
+      if (!chip) return;
+
+      const key = chip.dataset.key;
+      if (state.selectedFormations.has(key)) {
+        state.selectedFormations.delete(key);
+      } else {
+        state.selectedFormations.add(key);
+      }
+      applyFilters();
+    });
+
+    // Recherche interne dans le panneau de formations
+    document.getElementById('formationsSearch').addEventListener('input', renderFormationsPanel);
+
     // Initialisation des écouteurs d'événements
-    document.getElementById('applyBtn').addEventListener('click', applyFilters);
     document.getElementById('resetBtn').addEventListener('click', resetFilters);
     document.getElementById('academies').addEventListener('change', toggleDepartments);
+
+    // Actualisation en direct pendant la modification des filtres
+    ['riasec', 'typeFormation', 'academies', 'departements', 'internat', 'statut'].forEach(id => {
+      document.getElementById(id).addEventListener('change', applyFilters);
+    });
     document.getElementById('viewBoth').addEventListener('click', () => setView('both'));
     document.getElementById('viewMap').addEventListener('click', () => setView('map'));
     document.getElementById('viewList').addEventListener('click', () => setView('list'));
