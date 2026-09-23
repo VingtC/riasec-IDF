@@ -349,7 +349,8 @@
 {"id":"37247", "type":"cap"},
 {"id":"36336", "type":"cap"},
 {"id":"42133", "type":"cap"},
-{"id":"36336", "type":"cap"}]
+{"id":"36336", "type":"cap"},
+{"id": "STD2A", "type": "techno"}]
    },
 {
      "id": "0750796H",
@@ -13657,7 +13658,8 @@
 { "id": "STI2D-EE","type": "techno"},
 { "id": "STI2D-SIN", "type": "techno" },
 { "id": "STMG-GF", "type": "techno"},
-{ "id": "STMG-Mercatique","type": "techno"},{"id":"26334", "type":"pro"},
+{ "id": "STMG-Mercatique","type": "techno"},
+{"id":"26334", "type":"pro"},
 {"id":"25354", "type":"pro"},
 {"id":"25353", "type":"pro"},
 {"id":"38401", "type":"cap"},
