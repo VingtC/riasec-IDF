@@ -43,16 +43,46 @@
     }
 
     .filters-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
       gap: 18px 24px;
-      align-items: end;
+      align-items: flex-start;
     }
 
     .field {
       display: flex;
       flex-direction: column;
       gap: 8px;
+      flex: 0 0 auto;
+    }
+
+    .field-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .field-header label,
+    .formations-panel-header label {
+      cursor: pointer;
+    }
+
+    .field-toggle {
+      min-width: auto;
+      width: 26px;
+      height: 26px;
+      padding: 0;
+      font-size: 1rem;
+      line-height: 1;
+      font-weight: 700;
+      background: #e9ecef;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    .field-toggle:hover {
+      background: #dfe3e8;
     }
 
     label {
@@ -73,6 +103,10 @@
     input {
       width: 100%;
       background: #fff;
+    }
+
+    .field select {
+      width: auto;
     }
 
     select[multiple] {
@@ -414,7 +448,7 @@
     .formations-panel-header {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 8px;
       flex-wrap: wrap;
       margin-bottom: 10px;
     }
@@ -425,10 +459,9 @@
     }
 
     .formations-search {
-      flex: 1;
-      min-width: 220px;
+      display: block;
+      width: 100%;
       max-width: 360px;
-      width: auto;
     }
 
     .formations-list {
@@ -493,9 +526,6 @@
       }
     }
   </style>
-  <meta property="og:image" content="https://bolt.new/static/og_default.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
 </head>
 <body>
   <h1>Recherche de lycées et de formations</h1>
@@ -505,8 +535,11 @@
 
     <div class="filters-grid">
       <div class="field">
-        <label for="riasec">Domaines RIASEC</label>
-        <select id="riasec" multiple>
+        <div class="field-header">
+          <label for="riasec">Domaines RIASEC</label>
+          <button type="button" class="field-toggle" data-target="riasec" aria-expanded="false" title="Afficher / masquer ce filtre">+</button>
+        </div>
+        <select id="riasec" multiple class="hidden">
           <option value="R">🔨 Réaliste</option>
           <option value="I">⚗️ Investigateur</option>
           <option value="A">🎨 Artistique</option>
@@ -517,8 +550,11 @@
       </div>
 
       <div class="field">
-        <label for="typeFormation">Type de formation</label>
-        <select id="typeFormation" multiple>
+        <div class="field-header">
+          <label for="typeFormation">Type de formation</label>
+          <button type="button" class="field-toggle" data-target="typeFormation" aria-expanded="false" title="Afficher / masquer ce filtre">+</button>
+        </div>
+        <select id="typeFormation" multiple class="hidden">
           <option value="EDS" class="filter-type-eds">Bac général / spécialités</option>
           <option value="techno" class="filter-type-techno">Bac technologique</option>
           <option value="pro" class="filter-type-pro">Bac professionnel</option>
@@ -527,8 +563,11 @@
       </div>
 
       <div class="field">
-        <label for="academies">Académie</label>
-        <select id="academies" multiple>
+        <div class="field-header">
+          <label for="academies">Académie</label>
+          <button type="button" class="field-toggle" data-target="academies" aria-expanded="false" title="Afficher / masquer ce filtre">+</button>
+        </div>
+        <select id="academies" multiple class="hidden">
           <option value="Paris">Paris</option>
           <option value="Versailles">Versailles</option>
           <option value="Créteil">Créteil</option>
@@ -536,13 +575,19 @@
       </div>
 
       <div class="field hidden" id="departementsWrapper">
-        <label for="departements">Département</label>
-        <select id="departements" multiple></select>
+        <div class="field-header">
+          <label for="departements">Département</label>
+          <button type="button" class="field-toggle" data-target="departements" aria-expanded="false" title="Afficher / masquer ce filtre">+</button>
+        </div>
+        <select id="departements" multiple class="hidden"></select>
       </div>
 
       <div class="field">
-        <label for="statut">Statut</label>
-        <select id="statut" multiple>
+        <div class="field-header">
+          <label for="statut">Statut</label>
+          <button type="button" class="field-toggle" data-target="statut" aria-expanded="false" title="Afficher / masquer ce filtre">+</button>
+        </div>
+        <select id="statut" multiple class="hidden">
           <option value="Public">Public</option>
           <option value="Privé sous contrat">Privé sous contrat</option>
           <option value="Privé">Privé hors contrat</option>
@@ -550,8 +595,11 @@
       </div>
 
       <div class="field">
-        <label for="internat">Internat</label>
-        <select id="internat">
+        <div class="field-header">
+          <label for="internat">Internat</label>
+          <button type="button" class="field-toggle" data-target="internat" aria-expanded="false" title="Afficher / masquer ce filtre">+</button>
+        </div>
+        <select id="internat" class="hidden">
           <option value="">Tous</option>
           <option value="1">Oui</option>
           <option value="0">Non</option>
@@ -562,14 +610,16 @@
     <div class="formations-panel">
       <div class="formations-panel-header">
         <label for="formationsSearch">Formations correspondantes (<span id="formationsCount">0</span>)</label>
-        <input id="formationsSearch" class="formations-search" type="text" placeholder="&#128269; Rechercher une formation..." />
+        <button type="button" class="field-toggle" data-target="formationsBody" aria-expanded="false" title="Afficher / masquer ce filtre">+</button>
       </div>
-      <div id="formationsList" class="formations-list"></div>
+      <div id="formationsBody" class="hidden">
+        <input id="formationsSearch" class="formations-search" type="text" placeholder="&#128269; Rechercher une formation..." />
+        <div id="formationsList" class="formations-list"></div>
+      </div>
     </div>
 
     <div class="button-row">
       <button id="resetBtn" type="button" class="secondary">Réinitialiser</button>
-      <!-- NOUVEAU : Compteur de résultats avec détail des filtres -->
       <div id="resultCounter" class="result-counter hidden">
         <span id="lyceeCount">0</span> établissement(s) ;
         <span id="formationCount">0</span> formation(s)
@@ -826,6 +876,27 @@
       return true;
     }
 
+    // Vérifie si des filtres de formation sont actifs (type, RIASEC, recherche ou sélection de puces)
+    function hasActiveFormationFilters(filters) {
+      return (filters.types && filters.types.length > 0)
+        || (filters.riasec && filters.riasec.length > 0)
+        || !!filters.search
+        || !!(filters.selectedFormations && filters.selectedFormations.size > 0);
+    }
+
+    // Vérifie si une formation est mise en avant dans la liste et sur la carte.
+    // Lorsque des formations sont sélectionnées dans le panneau, seules celles-ci
+    // sont affichées directement : les autres sont masquées derrière le bouton
+    // « Voir toutes les formations » de chaque établissement.
+    function matchesDisplayedFormation(formation, filters) {
+      const selected = filters.selectedFormations;
+      if (selected && selected.size > 0) {
+        return selected.has(`${formation.type}|${formation.id}`);
+      }
+      if (!hasActiveFormationFilters(filters)) return true;
+      return matchesFormation(formation, filters);
+    }
+
     // Vérifie si un lycée correspond aux filtres
     function matchesFilters(lycee, filters) {
       if (filters.academies.length > 0 && !filters.academies.includes(lycee.academie)) {
@@ -865,7 +936,7 @@
       markersLayer.clearLayers();
       markersByLyceeId.clear();
 
-      const hasFormationFilters = (filters.types && filters.types.length > 0) || (filters.riasec && filters.riasec.length > 0) || !!filters.search;
+      const hasFormationFilters = hasActiveFormationFilters(filters);
 
       lycees.forEach(lycee => {
         if (!lycee.latitude || !lycee.longitude) return;
@@ -874,9 +945,7 @@
         markersByLyceeId.set(lycee.id, marker);
 
         const allFormations = lycee.formations || [];
-        const matchingFormations = hasFormationFilters
-          ? allFormations.filter(f => matchesFormation(f, filters))
-          : allFormations;
+        const matchingFormations = allFormations.filter(f => matchesDisplayedFormation(f, filters));
         const otherFormations = allFormations.filter(f => !matchingFormations.includes(f));
 
         const matchingHtml = matchingFormations.map(renderFormationItem).join('');
@@ -941,13 +1010,11 @@
         return;
       }
 
-      const hasFormationFilters = filters.types.length > 0 || filters.riasec.length > 0 || !!filters.search;
+      const hasFormationFilters = hasActiveFormationFilters(filters);
 
       resultsEl.innerHTML = lycees.map(lycee => {
         const allFormations = lycee.formations || [];
-        const matchingFormations = hasFormationFilters
-          ? allFormations.filter(f => matchesFormation(f, filters))
-          : allFormations;
+        const matchingFormations = allFormations.filter(f => matchesDisplayedFormation(f, filters));
         const otherFormations = allFormations.filter(f => !matchingFormations.includes(f));
 
         const matchingHtml = matchingFormations.map(renderFormationItem).join('');
@@ -1054,12 +1121,12 @@
 
       // Compter le nombre total de formations (filtrées si des filtres sont appliqués)
       let formationCount = 0;
-      const hasFormationFilters = filters.types.length > 0 || filters.riasec.length > 0 || !!filters.search;
+      const hasFormationFilters = hasActiveFormationFilters(filters);
 
       lycees.forEach(lycee => {
         const allFormations = lycee.formations || [];
         if (hasFormationFilters) {
-          formationCount += allFormations.filter(f => matchesFormation(f, filters)).length;
+          formationCount += allFormations.filter(f => matchesDisplayedFormation(f, filters)).length;
         } else {
           formationCount += allFormations.length;
         }
@@ -1296,6 +1363,40 @@
 
     // Recherche interne dans le panneau de formations
     document.getElementById('formationsSearch').addEventListener('input', renderFormationsPanel);
+
+    // Replie ou déplie le contenu d'un filtre (bouton + / -)
+    function setFilterCollapsed(targetId, collapsed) {
+      const target = document.getElementById(targetId);
+      const button = document.querySelector(`.field-toggle[data-target="${targetId}"]`);
+      if (!target || !button) return;
+
+      target.classList.toggle('hidden', collapsed);
+      button.textContent = collapsed ? '+' : '-';
+      button.setAttribute('aria-expanded', String(!collapsed));
+    }
+
+    // Bascule au clic sur le bouton + / -
+    document.querySelectorAll('.field-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const target = document.getElementById(button.dataset.target);
+        if (target) setFilterCollapsed(button.dataset.target, !target.classList.contains('hidden'));
+      });
+    });
+
+    // Clic sur le nom du filtre : affiche le contenu s'il est replié
+    document.querySelectorAll('.field-header label, .formations-panel-header label').forEach(label => {
+      label.addEventListener('click', event => {
+        const header = label.closest('.field-header, .formations-panel-header');
+        const toggle = header ? header.querySelector('.field-toggle') : null;
+        if (!toggle) return;
+
+        const target = document.getElementById(toggle.dataset.target);
+        if (target && target.classList.contains('hidden')) {
+          event.preventDefault(); // évite d'envoyer le clic vers le contrôle affiché
+          setFilterCollapsed(toggle.dataset.target, false);
+        }
+      });
+    });
 
     // Initialisation des écouteurs d'événements
     document.getElementById('resetBtn').addEventListener('click', resetFilters);
